@@ -1,0 +1,1 @@
+        <patch offset="0x066a20">27 b9 e6 a9 5e 10 e4 50 0c ff 51 d3 6d db 4e 50 78 ea cd 78 88 02 ab e8 e3 db 4e df 7b 1b 96 92 ef eb 47 3b 23 5d 8e c9 17 cd e6 35 ee da b5 b0 33 83 fb f1 67 37 dc f6 be 89 20 fc d0 35 50 c2 de e8 67 f5 a6 41 02 34 8f 76 35 2f 62 35 44 06 96 00 b9 5f 74 e9 02 05 bb a3 86 22</patch>

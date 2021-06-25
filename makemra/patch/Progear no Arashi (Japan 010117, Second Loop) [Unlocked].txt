@@ -1,0 +1,3 @@
+        <patch offset="0x055f32">d1 3f 70 db</patch>
+        <patch offset="0x0f5140">88 b9 72 21 ed 8b 92 3d 21 33 8f 50 2c 0d 8f a1 02 be 43 07 9b 63 40 d3 2c 8b 77 8d 21 9c 80 6b</patch>
+        <patch offset="0x0f5548">a8 02 0f 00 1e 55 0f 00 3e 62 0f 00 86 7a 0f 00 ba 88 0f 00 da 8d 04 00 0f 00 3e 55 91 00 00 46 04 00 0f 00 3e 5a 91 00 00 4a 02 00 0f 00 3e 5f 91 00 00 4c ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff</patch>

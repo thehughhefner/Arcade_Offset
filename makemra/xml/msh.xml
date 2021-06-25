@@ -1,0 +1,118 @@
+<mame>
+	<machine name="msh_1" sourcefile="cps2.cpp" cloneof="msh" romof="msh">
+		<description>Marvel Super Heroes (Japan 951117) [Unlocked]</description>
+		<year>1995</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="mshj.03g" size="524288" crc="261f4091" sha1="f4509780768e3601720d0d78c8a9824d410d59da" region="maincpu" offset="0" flags="140"/>
+		<rom name="mshj.04g" size="524288" crc="61d791c6" sha1="9f883bcc48058a99c4ba653d0855c58c5d081243" region="maincpu" offset="80000" flags="140"/>
+		<rom name="msh.05a" size="524288" crc="f37539e6" sha1="770febc25ca5615b6c2023727edab3c68b15b2c4" region="maincpu" offset="100000" flags="140"/>
+		<rom name="msh.06b" merge="msh.06b" size="524288" crc="803e3fa4" sha1="0acdeda65002521bf24130cbf06f9faa1dcef9e5" region="maincpu" offset="180000" flags="140"/>
+		<rom name="msh.07a" merge="msh.07a" size="524288" crc="c45f8e27" sha1="4d28e0782c31ce56e728ac6ef5edd10437f00637" region="maincpu" offset="200000" flags="140"/>
+		<rom name="msh.08a" merge="msh.08a" size="524288" crc="9ca6f12c" sha1="26ad682667b983b805e1f577426e5fca8ee3c82b" region="maincpu" offset="280000" flags="140"/>
+		<rom name="msh.09a" merge="msh.09a" size="524288" crc="82ec27af" sha1="caf76268063ba91d28e8af684d60c2d71f29b9b9" region="maincpu" offset="300000" flags="140"/>
+		<rom name="msh.10b" merge="msh.10b" size="524288" crc="8d931196" sha1="983e62efcdb4c8db6bce6acf4f86acb9447b565d" region="maincpu" offset="380000" flags="140"/>
+		<rom name="msh.13m" merge="msh.13m" size="4194304" crc="09d14566" sha1="c96463654043f22da5e844c6da17aa9273dc3439" region="gfx" offset="0" flags="6100"/>
+		<rom name="msh.15m" merge="msh.15m" size="4194304" crc="ee962057" sha1="24e359accb5f71a5863d7bad4088719fa547f88c" region="gfx" offset="2" flags="6100"/>
+		<rom name="msh.17m" merge="msh.17m" size="4194304" crc="604ece14" sha1="880fb62b33ba4cceb38635e4ec056fac11a3c70f" region="gfx" offset="4" flags="6100"/>
+		<rom name="msh.19m" merge="msh.19m" size="4194304" crc="94a731e8" sha1="1e784a3412e7361e3001494e1daf840ef8c20449" region="gfx" offset="6" flags="6100"/>
+		<rom name="msh.14m" merge="msh.14m" size="4194304" crc="4197973e" sha1="93aeea1a480b5f452c8a40ae3fff956796b859fa" region="gfx" offset="1000000" flags="6100"/>
+		<rom name="msh.16m" merge="msh.16m" size="4194304" crc="438da4a0" sha1="ca93b14c3a570f9dd582efbb3f0536a92e535042" region="gfx" offset="1000002" flags="6100"/>
+		<rom name="msh.18m" merge="msh.18m" size="4194304" crc="4db92d94" sha1="f1b25ccc0627139ad5b287a8f2ab3b4a2fb8b8e4" region="gfx" offset="1000004" flags="6100"/>
+		<rom name="msh.20m" merge="msh.20m" size="4194304" crc="a2b0c6c0" sha1="71016c01c1a706b73cf5b9ac7e384a030c6cf08d" region="gfx" offset="1000006" flags="6100"/>
+		<rom name="msh.01" merge="msh.01" size="131072" crc="c976e6f9" sha1="281025e5aaf97c0aeddc8bd0f737d092daadad9e" region="audiocpu" offset="0" flags="0"/>
+		<rom name="msh.02" merge="msh.02" size="131072" crc="ce67d0d9" sha1="324226597cc5a11603f04085fef7715a314ecc05" region="audiocpu" offset="28000" flags="0"/>
+		<rom name="msh.11m" merge="msh.11m" size="2097152" crc="37ac6d30" sha1="ec67421fbf4a08a686e76792cb35e9cbf04d022d" region="qsound" offset="0" flags="140"/>
+		<rom name="msh.12m" merge="msh.12m" size="2097152" crc="de092570" sha1="a03d0df901f6ea79685eaed67db65bee14ec29c6" region="qsound" offset="200000" flags="140"/>
+		<rom name="mshj.key" size="20" crc="888761ac" sha1="a1c72deedab2bafe5d594bba905a6274575b6e56" region="key" offset="0" flags="0"/>
+		<device_ref name="m68000"/>
+		<device_ref name="timer"/>
+		<device_ref name="z80"/>
+		<device_ref name="93c46_16"/>
+		<device_ref name="screen"/>
+		<device_ref name="gfxdecode"/>
+		<device_ref name="palette"/>
+		<device_ref name="speaker"/>
+		<device_ref name="speaker"/>
+		<device_ref name="qsound_hle"/>
+		<chip type="cpu" tag="maincpu" name="Motorola MC68000" clock="16000000"/>
+		<chip type="cpu" tag="audiocpu" name="Zilog Z80" clock="8000000"/>
+		<chip type="audio" tag="lspeaker" name="Speaker"/>
+		<chip type="audio" tag="rspeaker" name="Speaker"/>
+		<chip type="audio" tag="qsound" name="QSound (HLE)" clock="60000000"/>
+		<display tag="screen" type="raster" rotate="0" width="384" height="224" refresh="59.637405" pixclock="8000000" htotal="512" hbend="64" hbstart="448" vtotal="262" vbend="16" vbstart="240" />
+		<sound channels="2"/>
+		<input players="2" coins="2" service="yes">
+			<control type="joy" player="1" buttons="6" ways="8"/>
+			<control type="joy" player="2" buttons="6" ways="8"/>
+		</input>
+		<port tag=":DIGITALVOL">
+		</port>
+		<port tag=":EEPROMOUT">
+		</port>
+		<port tag=":IN0">
+		</port>
+		<port tag=":IN1">
+		</port>
+		<port tag=":IN2">
+		</port>
+		<driver status="good" emulation="good" savestate="supported"/>
+	</machine>
+	<machine name="msh_2" sourcefile="cps2.cpp" cloneof="msh" romof="msh">
+		<description>Marvel Super Heroes (USA 951117) [Unlocked]</description>
+		<year>1995</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="mshj.03g" size="524288" crc="261f4091" sha1="f4509780768e3601720d0d78c8a9824d410d59da" region="maincpu" offset="0" flags="140"/>
+		<rom name="mshj.04g" size="524288" crc="61d791c6" sha1="9f883bcc48058a99c4ba653d0855c58c5d081243" region="maincpu" offset="80000" flags="140"/>
+		<rom name="msh.05a" size="524288" crc="f37539e6" sha1="770febc25ca5615b6c2023727edab3c68b15b2c4" region="maincpu" offset="100000" flags="140"/>
+		<rom name="msh.06b" merge="msh.06b" size="524288" crc="803e3fa4" sha1="0acdeda65002521bf24130cbf06f9faa1dcef9e5" region="maincpu" offset="180000" flags="140"/>
+		<rom name="msh.07a" merge="msh.07a" size="524288" crc="c45f8e27" sha1="4d28e0782c31ce56e728ac6ef5edd10437f00637" region="maincpu" offset="200000" flags="140"/>
+		<rom name="msh.08a" merge="msh.08a" size="524288" crc="9ca6f12c" sha1="26ad682667b983b805e1f577426e5fca8ee3c82b" region="maincpu" offset="280000" flags="140"/>
+		<rom name="msh.09a" merge="msh.09a" size="524288" crc="82ec27af" sha1="caf76268063ba91d28e8af684d60c2d71f29b9b9" region="maincpu" offset="300000" flags="140"/>
+		<rom name="msh.10b" merge="msh.10b" size="524288" crc="8d931196" sha1="983e62efcdb4c8db6bce6acf4f86acb9447b565d" region="maincpu" offset="380000" flags="140"/>
+		<rom name="msh.13m" merge="msh.13m" size="4194304" crc="09d14566" sha1="c96463654043f22da5e844c6da17aa9273dc3439" region="gfx" offset="0" flags="6100"/>
+		<rom name="msh.15m" merge="msh.15m" size="4194304" crc="ee962057" sha1="24e359accb5f71a5863d7bad4088719fa547f88c" region="gfx" offset="2" flags="6100"/>
+		<rom name="msh.17m" merge="msh.17m" size="4194304" crc="604ece14" sha1="880fb62b33ba4cceb38635e4ec056fac11a3c70f" region="gfx" offset="4" flags="6100"/>
+		<rom name="msh.19m" merge="msh.19m" size="4194304" crc="94a731e8" sha1="1e784a3412e7361e3001494e1daf840ef8c20449" region="gfx" offset="6" flags="6100"/>
+		<rom name="msh.14m" merge="msh.14m" size="4194304" crc="4197973e" sha1="93aeea1a480b5f452c8a40ae3fff956796b859fa" region="gfx" offset="1000000" flags="6100"/>
+		<rom name="msh.16m" merge="msh.16m" size="4194304" crc="438da4a0" sha1="ca93b14c3a570f9dd582efbb3f0536a92e535042" region="gfx" offset="1000002" flags="6100"/>
+		<rom name="msh.18m" merge="msh.18m" size="4194304" crc="4db92d94" sha1="f1b25ccc0627139ad5b287a8f2ab3b4a2fb8b8e4" region="gfx" offset="1000004" flags="6100"/>
+		<rom name="msh.20m" merge="msh.20m" size="4194304" crc="a2b0c6c0" sha1="71016c01c1a706b73cf5b9ac7e384a030c6cf08d" region="gfx" offset="1000006" flags="6100"/>
+		<rom name="msh.01" merge="msh.01" size="131072" crc="c976e6f9" sha1="281025e5aaf97c0aeddc8bd0f737d092daadad9e" region="audiocpu" offset="0" flags="0"/>
+		<rom name="msh.02" merge="msh.02" size="131072" crc="ce67d0d9" sha1="324226597cc5a11603f04085fef7715a314ecc05" region="audiocpu" offset="28000" flags="0"/>
+		<rom name="msh.11m" merge="msh.11m" size="2097152" crc="37ac6d30" sha1="ec67421fbf4a08a686e76792cb35e9cbf04d022d" region="qsound" offset="0" flags="140"/>
+		<rom name="msh.12m" merge="msh.12m" size="2097152" crc="de092570" sha1="a03d0df901f6ea79685eaed67db65bee14ec29c6" region="qsound" offset="200000" flags="140"/>
+		<rom name="mshj.key" size="20" crc="888761ac" sha1="a1c72deedab2bafe5d594bba905a6274575b6e56" region="key" offset="0" flags="0"/>
+		<device_ref name="m68000"/>
+		<device_ref name="timer"/>
+		<device_ref name="z80"/>
+		<device_ref name="93c46_16"/>
+		<device_ref name="screen"/>
+		<device_ref name="gfxdecode"/>
+		<device_ref name="palette"/>
+		<device_ref name="speaker"/>
+		<device_ref name="speaker"/>
+		<device_ref name="qsound_hle"/>
+		<chip type="cpu" tag="maincpu" name="Motorola MC68000" clock="16000000"/>
+		<chip type="cpu" tag="audiocpu" name="Zilog Z80" clock="8000000"/>
+		<chip type="audio" tag="lspeaker" name="Speaker"/>
+		<chip type="audio" tag="rspeaker" name="Speaker"/>
+		<chip type="audio" tag="qsound" name="QSound (HLE)" clock="60000000"/>
+		<display tag="screen" type="raster" rotate="0" width="384" height="224" refresh="59.637405" pixclock="8000000" htotal="512" hbend="64" hbstart="448" vtotal="262" vbend="16" vbstart="240" />
+		<sound channels="2"/>
+		<input players="2" coins="2" service="yes">
+			<control type="joy" player="1" buttons="6" ways="8"/>
+			<control type="joy" player="2" buttons="6" ways="8"/>
+		</input>
+		<port tag=":DIGITALVOL">
+		</port>
+		<port tag=":EEPROMOUT">
+		</port>
+		<port tag=":IN0">
+		</port>
+		<port tag=":IN1">
+		</port>
+		<port tag=":IN2">
+		</port>
+		<driver status="good" emulation="good" savestate="supported"/>
+	</machine>
+</mame>

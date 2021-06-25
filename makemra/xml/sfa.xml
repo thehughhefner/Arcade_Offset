@@ -1,0 +1,52 @@
+<mame>
+	<machine name="sfzj" sourcefile="cps2.cpp" cloneof="sfa" romof="sfa">
+		<description>Street Fighter Zero (Japan 950727) [Unlocked v1]</description>
+		<year>1995</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="sfzj.03c" size="524288" crc="f5444120" sha1="22158894971754ad83b8eeb8bdfb9874794b98c0" region="maincpu" offset="0" flags="140"/>
+		<rom name="sfz.04b" merge="sfz.04b" size="524288" crc="8b73b0e5" sha1="5318761f615c21395366b5333e75eaaa73ef2073" region="maincpu" offset="80000" flags="140"/>
+		<rom name="sfz.05a" merge="sfz.05a" size="524288" crc="0810544d" sha1="5f39bda3e7b16508eb58e5a2e0cc58c09cf428ce" region="maincpu" offset="100000" flags="140"/>
+		<rom name="sfz.06" merge="sfz.06" size="524288" crc="806e8f38" sha1="b6d6912aa8f2f590335d7ff9a8214648e7131ebb" region="maincpu" offset="180000" flags="140"/>
+		<rom name="sfz.14m" merge="sfz.14m" size="2097152" crc="90fefdb3" sha1="5eb28c8de57acfeaefebdd01509c7d9ba5244705" region="gfx" offset="800000" flags="6100"/>
+		<rom name="sfz.16m" merge="sfz.16m" size="2097152" crc="5354c948" sha1="07588f1ba6addc04fef3274c971174aaf3e632ab" region="gfx" offset="800002" flags="6100"/>
+		<rom name="sfz.18m" merge="sfz.18m" size="2097152" crc="41a1e790" sha1="ce25dad542308691dbe9606b26279bbd59ea4b81" region="gfx" offset="800004" flags="6100"/>
+		<rom name="sfz.20m" merge="sfz.20m" size="2097152" crc="a549df98" sha1="f054e95df650a891ef56da8bfb31cb2c945a9aed" region="gfx" offset="800006" flags="6100"/>
+		<rom name="sfz.01" merge="sfz.01" size="131072" crc="ffffec7d" sha1="75b4aef001b72a0f571b51b2b97803facc1832dd" region="audiocpu" offset="0" flags="0"/>
+		<rom name="sfz.02" merge="sfz.02" size="131072" crc="45f46a08" sha1="e32dbd27b52ab708278045b5a829376e55a4ca81" region="audiocpu" offset="28000" flags="0"/>
+		<rom name="sfz.11m" merge="sfz.11m" size="2097152" crc="c4b093cd" sha1="256526bb693a0b72443f047e060304c9b739acd1" region="qsound" offset="0" flags="140"/>
+		<rom name="sfz.12m" merge="sfz.12m" size="2097152" crc="8bdbc4b4" sha1="0e21c9a75a17a7e7dfd8bb51098c2b9dc4c933ec" region="qsound" offset="200000" flags="140"/>
+		<rom name="sfzj.key" size="20" crc="355d85b8" sha1="5da2c407852ce7b28153f3f94de8328802ff2f2d" region="key" offset="0" flags="0"/>
+		<device_ref name="m68000"/>
+		<device_ref name="timer"/>
+		<device_ref name="z80"/>
+		<device_ref name="93c46_16"/>
+		<device_ref name="screen"/>
+		<device_ref name="gfxdecode"/>
+		<device_ref name="palette"/>
+		<device_ref name="speaker"/>
+		<device_ref name="speaker"/>
+		<device_ref name="qsound_hle"/>
+		<chip type="cpu" tag="maincpu" name="Motorola MC68000" clock="16000000"/>
+		<chip type="cpu" tag="audiocpu" name="Zilog Z80" clock="8000000"/>
+		<chip type="audio" tag="lspeaker" name="Speaker"/>
+		<chip type="audio" tag="rspeaker" name="Speaker"/>
+		<chip type="audio" tag="qsound" name="QSound (HLE)" clock="60000000"/>
+		<display tag="screen" type="raster" rotate="0" width="384" height="224" refresh="59.637405" pixclock="8000000" htotal="512" hbend="64" hbstart="448" vtotal="262" vbend="16" vbstart="240" />
+		<sound channels="2"/>
+		<input players="2" coins="2" service="yes">
+			<control type="joy" player="1" buttons="6" ways="8"/>
+			<control type="joy" player="2" buttons="6" ways="8"/>
+		</input>
+		<port tag=":DIGITALVOL">
+		</port>
+		<port tag=":EEPROMOUT">
+		</port>
+		<port tag=":IN0">
+		</port>
+		<port tag=":IN1">
+		</port>
+		<port tag=":IN2">
+		</port>
+		<driver status="good" emulation="good" savestate="supported"/>
+	</machine>
+</mame>

@@ -1,0 +1,161 @@
+<mame>
+	<machine name="progear_1" sourcefile="cps2.cpp" cloneof="progear" romof="progear">
+		<description>Progear Red Label Halfway to Hell (Japan 160117)</description>
+		<year>2016</year>
+		<manufacturer>Cave</manufacturer>
+		<rom name="pgaj.03" size="524288" crc="06dbba54" sha1="b0b808e9974c727bd187f2cdcba71a301b78c759" region="maincpu" offset="0" flags="140"/>
+		<rom name="pgaj.04" size="524288" crc="a1f1f1bc" sha1="839cdc89d9483632883c185951c76deb4ff7657e" region="maincpu" offset="80000" flags="140"/>
+		<rom name="pga-simm.01c" merge="pga-simm.01c" size="2097152" crc="452f98b0" sha1="a10e615c32098f6d25becd466da8faa967523a7b" region="gfx" offset="0" flags="7000"/>
+		<rom name="pga-simm.01d" merge="pga-simm.01d" size="2097152" crc="9e672092" sha1="fce0b8b43a1c069262f4e3e81c1a04621e232c88" region="gfx" offset="1" flags="7000"/>
+		<rom name="pga-simm.01a" merge="pga-simm.01a" size="2097152" crc="ae9ddafe" sha1="afbb26fed6cd0cb5c0099a10d35aeb453318c14d" region="gfx" offset="2" flags="7000"/>
+		<rom name="pga-simm.01b" merge="pga-simm.01b" size="2097152" crc="94d72d94" sha1="df6a3fe49c008f73b160eb6f2a44dc371ff73cba" region="gfx" offset="3" flags="7000"/>
+		<rom name="pga-simm.03c" merge="pga-simm.03c" size="2097152" crc="48a1886d" sha1="ebf44b42d784924e08a832a7e5f66a887bab244b" region="gfx" offset="4" flags="7000"/>
+		<rom name="pga-simm.03d" merge="pga-simm.03d" size="2097152" crc="172d7e37" sha1="0eaedd24cd3fa87b6f35fbd63078d40c493c92d0" region="gfx" offset="5" flags="7000"/>
+		<rom name="pga-simm.03a" merge="pga-simm.03a" size="2097152" crc="9ee33d98" sha1="85d1bd31940e35ac8c732165020881a2d65cd6b1" region="gfx" offset="6" flags="7000"/>
+		<rom name="pga-simm.03b" merge="pga-simm.03b" size="2097152" crc="848dee32" sha1="c591288e86ad1624d0fe66563808af9fac786e64" region="gfx" offset="7" flags="7000"/>
+		<rom name="pga.01" merge="pga.01" size="131072" crc="bdbfa992" sha1="7c5496c1daaea6a7ab95c0b25625d325ec3427cc" region="audiocpu" offset="0" flags="0"/>
+		<rom name="pga-simm.05a" merge="pga-simm.05a" size="2097152" crc="c0aac80c" sha1="91784d35d4f7e113529bb5be6081b67094b150ea" region="qsound" offset="0" flags="140"/>
+		<rom name="pga-simm.05b" merge="pga-simm.05b" size="2097152" crc="37a65d86" sha1="374d562a4648734f82aa2ddb6d258e870896dd45" region="qsound" offset="200000" flags="140"/>
+		<rom name="pga-simm.06a" merge="pga-simm.06a" size="2097152" crc="d3f1e934" sha1="5dcea28c873d0d472f5b94e07d97cd77ace2b252" region="qsound" offset="400000" flags="140"/>
+		<rom name="pga-simm.06b" merge="pga-simm.06b" size="2097152" crc="8b39489a" sha1="fd790efaf37dc2c4c16f657941044e3e2d3c2711" region="qsound" offset="600000" flags="140"/>
+		<rom name="progearj.key" size="20" crc="d8d515e5" sha1="d0cfe4effac0e9ede8ad31db8972436638ff8d6f" region="key" offset="0" flags="0"/>
+		<device_ref name="m68000"/>
+		<device_ref name="timer"/>
+		<device_ref name="z80"/>
+		<device_ref name="93c46_16"/>
+		<device_ref name="screen"/>
+		<device_ref name="gfxdecode"/>
+		<device_ref name="palette"/>
+		<device_ref name="speaker"/>
+		<device_ref name="speaker"/>
+		<device_ref name="qsound_hle"/>
+		<chip type="cpu" tag="maincpu" name="Motorola MC68000" clock="16000000"/>
+		<chip type="cpu" tag="audiocpu" name="Zilog Z80" clock="8000000"/>
+		<chip type="audio" tag="lspeaker" name="Speaker"/>
+		<chip type="audio" tag="rspeaker" name="Speaker"/>
+		<chip type="audio" tag="qsound" name="QSound (HLE)" clock="60000000"/>
+		<display tag="screen" type="raster" rotate="0" width="384" height="224" refresh="59.637405" pixclock="8000000" htotal="512" hbend="64" hbstart="448" vtotal="262" vbend="16" vbstart="240" />
+		<sound channels="2"/>
+		<input players="2" coins="2" service="yes">
+			<control type="joy" player="1" buttons="3" ways="8"/>
+			<control type="joy" player="2" buttons="3" ways="8"/>
+		</input>
+		<port tag=":DIGITALVOL">
+		</port>
+		<port tag=":EEPROMOUT">
+		</port>
+		<port tag=":IN0">
+		</port>
+		<port tag=":IN1">
+		</port>
+		<port tag=":IN2">
+		</port>
+		<driver status="good" emulation="good" savestate="supported"/>
+	</machine>
+	<machine name="progear_2" sourcefile="cps2.cpp" cloneof="progear" romof="progear">
+		<description>Progear (USA 010117, Second Loop) [Unlocked]</description>
+		<year>2001</year>
+		<manufacturer>Cave</manufacturer>
+		<rom name="pgau.03" size="524288" crc="343a783e" sha1="7ba8ae041b062767bf64328adf22ef100c38cdfd" region="maincpu" offset="0" flags="140"/>
+		<rom name="pgau.04" size="524288" crc="16208d79" sha1="c477de7f31df44144a60d10dc4d933f3a7c20722" region="maincpu" offset="80000" flags="140"/>
+		<rom name="pga-simm.01c" size="2097152" crc="452f98b0" sha1="a10e615c32098f6d25becd466da8faa967523a7b" region="gfx" offset="0" flags="7000"/>
+		<rom name="pga-simm.01d" size="2097152" crc="9e672092" sha1="fce0b8b43a1c069262f4e3e81c1a04621e232c88" region="gfx" offset="1" flags="7000"/>
+		<rom name="pga-simm.01a" size="2097152" crc="ae9ddafe" sha1="afbb26fed6cd0cb5c0099a10d35aeb453318c14d" region="gfx" offset="2" flags="7000"/>
+		<rom name="pga-simm.01b" size="2097152" crc="94d72d94" sha1="df6a3fe49c008f73b160eb6f2a44dc371ff73cba" region="gfx" offset="3" flags="7000"/>
+		<rom name="pga-simm.03c" size="2097152" crc="48a1886d" sha1="ebf44b42d784924e08a832a7e5f66a887bab244b" region="gfx" offset="4" flags="7000"/>
+		<rom name="pga-simm.03d" size="2097152" crc="172d7e37" sha1="0eaedd24cd3fa87b6f35fbd63078d40c493c92d0" region="gfx" offset="5" flags="7000"/>
+		<rom name="pga-simm.03a" size="2097152" crc="9ee33d98" sha1="85d1bd31940e35ac8c732165020881a2d65cd6b1" region="gfx" offset="6" flags="7000"/>
+		<rom name="pga-simm.03b" size="2097152" crc="848dee32" sha1="c591288e86ad1624d0fe66563808af9fac786e64" region="gfx" offset="7" flags="7000"/>
+		<rom name="pga.01" size="131072" crc="bdbfa992" sha1="7c5496c1daaea6a7ab95c0b25625d325ec3427cc" region="audiocpu" offset="0" flags="0"/>
+		<rom name="pga-simm.05a" size="2097152" crc="c0aac80c" sha1="91784d35d4f7e113529bb5be6081b67094b150ea" region="qsound" offset="0" flags="140"/>
+		<rom name="pga-simm.05b" size="2097152" crc="37a65d86" sha1="374d562a4648734f82aa2ddb6d258e870896dd45" region="qsound" offset="200000" flags="140"/>
+		<rom name="pga-simm.06a" size="2097152" crc="d3f1e934" sha1="5dcea28c873d0d472f5b94e07d97cd77ace2b252" region="qsound" offset="400000" flags="140"/>
+		<rom name="pga-simm.06b" size="2097152" crc="8b39489a" sha1="fd790efaf37dc2c4c16f657941044e3e2d3c2711" region="qsound" offset="600000" flags="140"/>
+		<rom name="progear.key" size="20" crc="46736b17" sha1="3fd0cc78fad80210a7cf8b1150cba1e6121998dd" region="key" offset="0" flags="0"/>
+		<device_ref name="m68000"/>
+		<device_ref name="timer"/>
+		<device_ref name="z80"/>
+		<device_ref name="93c46_16"/>
+		<device_ref name="screen"/>
+		<device_ref name="gfxdecode"/>
+		<device_ref name="palette"/>
+		<device_ref name="speaker"/>
+		<device_ref name="speaker"/>
+		<device_ref name="qsound_hle"/>
+		<chip type="cpu" tag="maincpu" name="Motorola MC68000" clock="16000000"/>
+		<chip type="cpu" tag="audiocpu" name="Zilog Z80" clock="8000000"/>
+		<chip type="audio" tag="lspeaker" name="Speaker"/>
+		<chip type="audio" tag="rspeaker" name="Speaker"/>
+		<chip type="audio" tag="qsound" name="QSound (HLE)" clock="60000000"/>
+		<display tag="screen" type="raster" rotate="0" width="384" height="224" refresh="59.637405" pixclock="8000000" htotal="512" hbend="64" hbstart="448" vtotal="262" vbend="16" vbstart="240" />
+		<sound channels="2"/>
+		<input players="2" coins="2" service="yes">
+			<control type="joy" player="1" buttons="3" ways="8"/>
+			<control type="joy" player="2" buttons="3" ways="8"/>
+		</input>
+		<port tag=":DIGITALVOL">
+		</port>
+		<port tag=":EEPROMOUT">
+		</port>
+		<port tag=":IN0">
+		</port>
+		<port tag=":IN1">
+		</port>
+		<port tag=":IN2">
+		</port>
+		<driver status="good" emulation="good" savestate="supported"/>
+	</machine>
+	<machine name="progear_3" sourcefile="cps2.cpp" cloneof="progear" romof="progear">
+		<description>Progear no Arashi (Japan 010117, Second Loop) [Unlocked]</description>
+		<year>2001</year>
+		<manufacturer>Cave</manufacturer>
+		<rom name="pgaj.03" size="524288" crc="06dbba54" sha1="b0b808e9974c727bd187f2cdcba71a301b78c759" region="maincpu" offset="0" flags="140"/>
+		<rom name="pgaj.04" size="524288" crc="a1f1f1bc" sha1="839cdc89d9483632883c185951c76deb4ff7657e" region="maincpu" offset="80000" flags="140"/>
+		<rom name="pga-simm.01c" merge="pga-simm.01c" size="2097152" crc="452f98b0" sha1="a10e615c32098f6d25becd466da8faa967523a7b" region="gfx" offset="0" flags="7000"/>
+		<rom name="pga-simm.01d" merge="pga-simm.01d" size="2097152" crc="9e672092" sha1="fce0b8b43a1c069262f4e3e81c1a04621e232c88" region="gfx" offset="1" flags="7000"/>
+		<rom name="pga-simm.01a" merge="pga-simm.01a" size="2097152" crc="ae9ddafe" sha1="afbb26fed6cd0cb5c0099a10d35aeb453318c14d" region="gfx" offset="2" flags="7000"/>
+		<rom name="pga-simm.01b" merge="pga-simm.01b" size="2097152" crc="94d72d94" sha1="df6a3fe49c008f73b160eb6f2a44dc371ff73cba" region="gfx" offset="3" flags="7000"/>
+		<rom name="pga-simm.03c" merge="pga-simm.03c" size="2097152" crc="48a1886d" sha1="ebf44b42d784924e08a832a7e5f66a887bab244b" region="gfx" offset="4" flags="7000"/>
+		<rom name="pga-simm.03d" merge="pga-simm.03d" size="2097152" crc="172d7e37" sha1="0eaedd24cd3fa87b6f35fbd63078d40c493c92d0" region="gfx" offset="5" flags="7000"/>
+		<rom name="pga-simm.03a" merge="pga-simm.03a" size="2097152" crc="9ee33d98" sha1="85d1bd31940e35ac8c732165020881a2d65cd6b1" region="gfx" offset="6" flags="7000"/>
+		<rom name="pga-simm.03b" merge="pga-simm.03b" size="2097152" crc="848dee32" sha1="c591288e86ad1624d0fe66563808af9fac786e64" region="gfx" offset="7" flags="7000"/>
+		<rom name="pga.01" merge="pga.01" size="131072" crc="bdbfa992" sha1="7c5496c1daaea6a7ab95c0b25625d325ec3427cc" region="audiocpu" offset="0" flags="0"/>
+		<rom name="pga-simm.05a" merge="pga-simm.05a" size="2097152" crc="c0aac80c" sha1="91784d35d4f7e113529bb5be6081b67094b150ea" region="qsound" offset="0" flags="140"/>
+		<rom name="pga-simm.05b" merge="pga-simm.05b" size="2097152" crc="37a65d86" sha1="374d562a4648734f82aa2ddb6d258e870896dd45" region="qsound" offset="200000" flags="140"/>
+		<rom name="pga-simm.06a" merge="pga-simm.06a" size="2097152" crc="d3f1e934" sha1="5dcea28c873d0d472f5b94e07d97cd77ace2b252" region="qsound" offset="400000" flags="140"/>
+		<rom name="pga-simm.06b" merge="pga-simm.06b" size="2097152" crc="8b39489a" sha1="fd790efaf37dc2c4c16f657941044e3e2d3c2711" region="qsound" offset="600000" flags="140"/>
+		<rom name="progearj.key" size="20" crc="d8d515e5" sha1="d0cfe4effac0e9ede8ad31db8972436638ff8d6f" region="key" offset="0" flags="0"/>
+		<device_ref name="m68000"/>
+		<device_ref name="timer"/>
+		<device_ref name="z80"/>
+		<device_ref name="93c46_16"/>
+		<device_ref name="screen"/>
+		<device_ref name="gfxdecode"/>
+		<device_ref name="palette"/>
+		<device_ref name="speaker"/>
+		<device_ref name="speaker"/>
+		<device_ref name="qsound_hle"/>
+		<chip type="cpu" tag="maincpu" name="Motorola MC68000" clock="16000000"/>
+		<chip type="cpu" tag="audiocpu" name="Zilog Z80" clock="8000000"/>
+		<chip type="audio" tag="lspeaker" name="Speaker"/>
+		<chip type="audio" tag="rspeaker" name="Speaker"/>
+		<chip type="audio" tag="qsound" name="QSound (HLE)" clock="60000000"/>
+		<display tag="screen" type="raster" rotate="0" width="384" height="224" refresh="59.637405" pixclock="8000000" htotal="512" hbend="64" hbstart="448" vtotal="262" vbend="16" vbstart="240" />
+		<sound channels="2"/>
+		<input players="2" coins="2" service="yes">
+			<control type="joy" player="1" buttons="3" ways="8"/>
+			<control type="joy" player="2" buttons="3" ways="8"/>
+		</input>
+		<port tag=":DIGITALVOL">
+		</port>
+		<port tag=":EEPROMOUT">
+		</port>
+		<port tag=":IN0">
+		</port>
+		<port tag=":IN1">
+		</port>
+		<port tag=":IN2">
+		</port>
+		<driver status="good" emulation="good" savestate="supported"/>
+	</machine>
+</mame>

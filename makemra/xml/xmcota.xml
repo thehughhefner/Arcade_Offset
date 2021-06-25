@@ -1,0 +1,118 @@
+<mame>
+	<machine name="xmcota_1" sourcefile="cps2.cpp" cloneof="xmcota" romof="xmcota">
+		<description>X-Men: Children of the Atom (Japan 941219) [Unlocked]</description>
+		<year>1994</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="xmnj.03b" size="524288" crc="c8175fb3" sha1="ea25bd165f8794324a1e07719312798cf9742924" region="maincpu" offset="0" flags="140"/>
+		<rom name="xmnj.04b" size="524288" crc="54b3fba3" sha1="47eaff5d36a45e4196f87ed3d02e54d5407e7962" region="maincpu" offset="80000" flags="140"/>
+		<rom name="xmn.05" size="524288" crc="c3ed62a2" sha1="4e3317d7ca981e33318822103a16e59f4ce20deb" region="maincpu" offset="100000" flags="140"/>
+		<rom name="xmn.06" size="524288" crc="f03c52e1" sha1="904b2312ee594f5ece0484cad0eed25cc758185e" region="maincpu" offset="180000" flags="140"/>
+		<rom name="xmn.07" size="524288" crc="325626b1" sha1="3f3a0aabbe5ffad8136ac91e0de785103b16059b" region="maincpu" offset="200000" flags="140"/>
+		<rom name="xmn.08" size="524288" crc="7194ea10" sha1="40a5892d816f24cbfd4c310792eeabf689c6fa7e" region="maincpu" offset="280000" flags="140"/>
+		<rom name="xmn.09" size="524288" crc="ae946df3" sha1="733671f76d766bda7110df9d338791cc5202b050" region="maincpu" offset="300000" flags="140"/>
+		<rom name="xmn.10" size="524288" crc="32a6be1d" sha1="8f5fcb33b528abed670b4fc3fa62431a6e033c56" region="maincpu" offset="380000" flags="140"/>
+		<rom name="xmn.13m" merge="xmn.13m" size="4194304" crc="bf4df073" sha1="4d2740c3a827f0ec2cf75ad99c65e393c6a11c23" region="gfx" offset="0" flags="6100"/>
+		<rom name="xmn.15m" merge="xmn.15m" size="4194304" crc="4d7e4cef" sha1="50b8797b8099a8d76ad063ba1201a13dbb88ae3a" region="gfx" offset="2" flags="6100"/>
+		<rom name="xmn.17m" merge="xmn.17m" size="4194304" crc="513eea17" sha1="a497477ad9ac13180911d8745ef6ee1955c0b877" region="gfx" offset="4" flags="6100"/>
+		<rom name="xmn.19m" merge="xmn.19m" size="4194304" crc="d23897fc" sha1="1e31627999736652252164d32662779a1ac6ca29" region="gfx" offset="6" flags="6100"/>
+		<rom name="xmn.14m" merge="xmn.14m" size="4194304" crc="778237b7" sha1="89a759ec383518ec52f5059d10ec342f2247aa20" region="gfx" offset="1000000" flags="6100"/>
+		<rom name="xmn.16m" merge="xmn.16m" size="4194304" crc="67b36948" sha1="692fb6e4096b880aa22996d554b160f664bbd907" region="gfx" offset="1000002" flags="6100"/>
+		<rom name="xmn.18m" merge="xmn.18m" size="4194304" crc="015a7c4c" sha1="cccc95dafd076a1a9fa004710006149c42d058ba" region="gfx" offset="1000004" flags="6100"/>
+		<rom name="xmn.20m" merge="xmn.20m" size="4194304" crc="9dde2758" sha1="17ba259cad03c7b5d56c0a5eda9ab53521665729" region="gfx" offset="1000006" flags="6100"/>
+		<rom name="xmn.01a" merge="xmn.01a" size="131072" crc="40f479ea" sha1="f29e15f537675305264ae2138a0a537fb9e2008b" region="audiocpu" offset="0" flags="0"/>
+		<rom name="xmn.02a" merge="xmn.02a" size="131072" crc="39d9b5ad" sha1="af502debfd36100d4fc971ed25fdf9d7121d6f18" region="audiocpu" offset="28000" flags="0"/>
+		<rom name="xmn.11m" merge="xmn.11m" size="2097152" crc="c848a6bc" sha1="ac8ac564d3c43225822f8bc330eba9f35b24b0a4" region="qsound" offset="0" flags="140"/>
+		<rom name="xmn.12m" merge="xmn.12m" size="2097152" crc="729c188f" sha1="3279774ad8aebbcf0fc779cdfcbe21044dd192ad" region="qsound" offset="200000" flags="140"/>
+		<rom name="xmcotaj.key" size="20" crc="d278b4ac" sha1="06d94e8a203172792f405c73f9cbb37f4738429f" region="key" offset="0" flags="0"/>
+		<device_ref name="m68000"/>
+		<device_ref name="timer"/>
+		<device_ref name="z80"/>
+		<device_ref name="93c46_16"/>
+		<device_ref name="screen"/>
+		<device_ref name="gfxdecode"/>
+		<device_ref name="palette"/>
+		<device_ref name="speaker"/>
+		<device_ref name="speaker"/>
+		<device_ref name="qsound_hle"/>
+		<chip type="cpu" tag="maincpu" name="Motorola MC68000" clock="16000000"/>
+		<chip type="cpu" tag="audiocpu" name="Zilog Z80" clock="8000000"/>
+		<chip type="audio" tag="lspeaker" name="Speaker"/>
+		<chip type="audio" tag="rspeaker" name="Speaker"/>
+		<chip type="audio" tag="qsound" name="QSound (HLE)" clock="60000000"/>
+		<display tag="screen" type="raster" rotate="0" width="384" height="224" refresh="59.637405" pixclock="8000000" htotal="512" hbend="64" hbstart="448" vtotal="262" vbend="16" vbstart="240" />
+		<sound channels="2"/>
+		<input players="2" coins="2" service="yes">
+			<control type="joy" player="1" buttons="6" ways="8"/>
+			<control type="joy" player="2" buttons="6" ways="8"/>
+		</input>
+		<port tag=":DIGITALVOL">
+		</port>
+		<port tag=":EEPROMOUT">
+		</port>
+		<port tag=":IN0">
+		</port>
+		<port tag=":IN1">
+		</port>
+		<port tag=":IN2">
+		</port>
+		<driver status="good" emulation="good" savestate="supported"/>
+	</machine>
+	<machine name="xmcota_2" sourcefile="cps2.cpp" cloneof="xmcota" romof="xmcota">
+		<description>X-Men: Children of the Atom (USA 941219) [Unlocked]</description>
+		<year>1994</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="xmnj.03b" size="524288" crc="c8175fb3" sha1="ea25bd165f8794324a1e07719312798cf9742924" region="maincpu" offset="0" flags="140"/>
+		<rom name="xmnj.04b" size="524288" crc="54b3fba3" sha1="47eaff5d36a45e4196f87ed3d02e54d5407e7962" region="maincpu" offset="80000" flags="140"/>
+		<rom name="xmn.05" size="524288" crc="c3ed62a2" sha1="4e3317d7ca981e33318822103a16e59f4ce20deb" region="maincpu" offset="100000" flags="140"/>
+		<rom name="xmn.06" size="524288" crc="f03c52e1" sha1="904b2312ee594f5ece0484cad0eed25cc758185e" region="maincpu" offset="180000" flags="140"/>
+		<rom name="xmn.07" size="524288" crc="325626b1" sha1="3f3a0aabbe5ffad8136ac91e0de785103b16059b" region="maincpu" offset="200000" flags="140"/>
+		<rom name="xmn.08" size="524288" crc="7194ea10" sha1="40a5892d816f24cbfd4c310792eeabf689c6fa7e" region="maincpu" offset="280000" flags="140"/>
+		<rom name="xmn.09" size="524288" crc="ae946df3" sha1="733671f76d766bda7110df9d338791cc5202b050" region="maincpu" offset="300000" flags="140"/>
+		<rom name="xmn.10" size="524288" crc="32a6be1d" sha1="8f5fcb33b528abed670b4fc3fa62431a6e033c56" region="maincpu" offset="380000" flags="140"/>
+		<rom name="xmn.13m" merge="xmn.13m" size="4194304" crc="bf4df073" sha1="4d2740c3a827f0ec2cf75ad99c65e393c6a11c23" region="gfx" offset="0" flags="6100"/>
+		<rom name="xmn.15m" merge="xmn.15m" size="4194304" crc="4d7e4cef" sha1="50b8797b8099a8d76ad063ba1201a13dbb88ae3a" region="gfx" offset="2" flags="6100"/>
+		<rom name="xmn.17m" merge="xmn.17m" size="4194304" crc="513eea17" sha1="a497477ad9ac13180911d8745ef6ee1955c0b877" region="gfx" offset="4" flags="6100"/>
+		<rom name="xmn.19m" merge="xmn.19m" size="4194304" crc="d23897fc" sha1="1e31627999736652252164d32662779a1ac6ca29" region="gfx" offset="6" flags="6100"/>
+		<rom name="xmn.14m" merge="xmn.14m" size="4194304" crc="778237b7" sha1="89a759ec383518ec52f5059d10ec342f2247aa20" region="gfx" offset="1000000" flags="6100"/>
+		<rom name="xmn.16m" merge="xmn.16m" size="4194304" crc="67b36948" sha1="692fb6e4096b880aa22996d554b160f664bbd907" region="gfx" offset="1000002" flags="6100"/>
+		<rom name="xmn.18m" merge="xmn.18m" size="4194304" crc="015a7c4c" sha1="cccc95dafd076a1a9fa004710006149c42d058ba" region="gfx" offset="1000004" flags="6100"/>
+		<rom name="xmn.20m" merge="xmn.20m" size="4194304" crc="9dde2758" sha1="17ba259cad03c7b5d56c0a5eda9ab53521665729" region="gfx" offset="1000006" flags="6100"/>
+		<rom name="xmn.01a" merge="xmn.01a" size="131072" crc="40f479ea" sha1="f29e15f537675305264ae2138a0a537fb9e2008b" region="audiocpu" offset="0" flags="0"/>
+		<rom name="xmn.02a" merge="xmn.02a" size="131072" crc="39d9b5ad" sha1="af502debfd36100d4fc971ed25fdf9d7121d6f18" region="audiocpu" offset="28000" flags="0"/>
+		<rom name="xmn.11m" merge="xmn.11m" size="2097152" crc="c848a6bc" sha1="ac8ac564d3c43225822f8bc330eba9f35b24b0a4" region="qsound" offset="0" flags="140"/>
+		<rom name="xmn.12m" merge="xmn.12m" size="2097152" crc="729c188f" sha1="3279774ad8aebbcf0fc779cdfcbe21044dd192ad" region="qsound" offset="200000" flags="140"/>
+		<rom name="xmcotaj.key" size="20" crc="d278b4ac" sha1="06d94e8a203172792f405c73f9cbb37f4738429f" region="key" offset="0" flags="0"/>
+		<device_ref name="m68000"/>
+		<device_ref name="timer"/>
+		<device_ref name="z80"/>
+		<device_ref name="93c46_16"/>
+		<device_ref name="screen"/>
+		<device_ref name="gfxdecode"/>
+		<device_ref name="palette"/>
+		<device_ref name="speaker"/>
+		<device_ref name="speaker"/>
+		<device_ref name="qsound_hle"/>
+		<chip type="cpu" tag="maincpu" name="Motorola MC68000" clock="16000000"/>
+		<chip type="cpu" tag="audiocpu" name="Zilog Z80" clock="8000000"/>
+		<chip type="audio" tag="lspeaker" name="Speaker"/>
+		<chip type="audio" tag="rspeaker" name="Speaker"/>
+		<chip type="audio" tag="qsound" name="QSound (HLE)" clock="60000000"/>
+		<display tag="screen" type="raster" rotate="0" width="384" height="224" refresh="59.637405" pixclock="8000000" htotal="512" hbend="64" hbstart="448" vtotal="262" vbend="16" vbstart="240" />
+		<sound channels="2"/>
+		<input players="2" coins="2" service="yes">
+			<control type="joy" player="1" buttons="6" ways="8"/>
+			<control type="joy" player="2" buttons="6" ways="8"/>
+		</input>
+		<port tag=":DIGITALVOL">
+		</port>
+		<port tag=":EEPROMOUT">
+		</port>
+		<port tag=":IN0">
+		</port>
+		<port tag=":IN1">
+		</port>
+		<port tag=":IN2">
+		</port>
+		<driver status="good" emulation="good" savestate="supported"/>
+	</machine>
+</mame>

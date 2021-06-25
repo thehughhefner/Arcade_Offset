@@ -1,0 +1,118 @@
+<mame>
+	<machine name="mshvsf_1" sourcefile="cps2.cpp" cloneof="mshvsf" romof="mshvsf">
+		<description>Marvel Super Heroes Vs. Street Fighter (Japan 970707) [Unlocked]</description>
+		<year>1997</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="mvsj.03i" size="524288" crc="d8cbb691" sha1="16820cf3bc7285477e61bd598a3ed4ea5e0e770d" region="maincpu" offset="0" flags="140"/>
+		<rom name="mvsj.04i" size="524288" crc="32741ace" sha1="36db3a3aeaf29369977593c051bf5665cffefb2d" region="maincpu" offset="80000" flags="140"/>
+		<rom name="mvs.05h" size="524288" crc="77870dc3" sha1="924a7c82456bb44d7b0be65af11dbe1a2420a3f0" region="maincpu" offset="100000" flags="140"/>
+		<rom name="mvs.06a" merge="mvs.06a" size="524288" crc="959f3030" sha1="fbbaa915324815246738f3426232e623f039ce26" region="maincpu" offset="180000" flags="140"/>
+		<rom name="mvs.07b" merge="mvs.07b" size="524288" crc="7f915bdb" sha1="683da09c5ba55e31b59aa95a8e13c45dc574ab3c" region="maincpu" offset="200000" flags="140"/>
+		<rom name="mvs.08a" merge="mvs.08a" size="524288" crc="c2813884" sha1="49e5d4bc48f90c8146cb6aafb9240aff0119f1a7" region="maincpu" offset="280000" flags="140"/>
+		<rom name="mvs.09b" merge="mvs.09b" size="524288" crc="3ba08818" sha1="9ab132a3cac55fcccebe6c99b6fb0ba1305f8f6e" region="maincpu" offset="300000" flags="140"/>
+		<rom name="mvs.10b" merge="mvs.10b" size="524288" crc="cf0dba98" sha1="f4c1f8a6e7a79ecc6241d5268b3039f8a09ea516" region="maincpu" offset="380000" flags="140"/>
+		<rom name="mvs.13m" merge="mvs.13m" size="4194304" crc="29b05fd9" sha1="e8fdb1ee5515a560eb4256ae4fd99bb1192e1a87" region="gfx" offset="0" flags="6100"/>
+		<rom name="mvs.15m" merge="mvs.15m" size="4194304" crc="faddccf1" sha1="4ed03ea91883a0413325f57edcc1614120b5922c" region="gfx" offset="2" flags="6100"/>
+		<rom name="mvs.17m" merge="mvs.17m" size="4194304" crc="97aaf4c7" sha1="6a054921cc14fe080cb3f62c391f8ae3cc7e8ba9" region="gfx" offset="4" flags="6100"/>
+		<rom name="mvs.19m" merge="mvs.19m" size="4194304" crc="cb70e915" sha1="da4d2480d348ac6dfd01256a88f4f3db8357ae46" region="gfx" offset="6" flags="6100"/>
+		<rom name="mvs.14m" merge="mvs.14m" size="4194304" crc="b3b1972d" sha1="0f2c3fb7de014181ee481ec35d0578b2c116c2dc" region="gfx" offset="1000000" flags="6100"/>
+		<rom name="mvs.16m" merge="mvs.16m" size="4194304" crc="08aadb5d" sha1="3a2c222eca3e7df80ce69951b3db6442312751a4" region="gfx" offset="1000002" flags="6100"/>
+		<rom name="mvs.18m" merge="mvs.18m" size="4194304" crc="c1228b35" sha1="7afdfb552888c79d0fbb30242b3d917b87fad57a" region="gfx" offset="1000004" flags="6100"/>
+		<rom name="mvs.20m" merge="mvs.20m" size="4194304" crc="366cc6c2" sha1="6f2a789087c8e404c5227b927fa8328c03593243" region="gfx" offset="1000006" flags="6100"/>
+		<rom name="mvs.01" merge="mvs.01" size="131072" crc="68252324" sha1="138ef320ef27956b2ab5591d49a1315b7b0a194c" region="audiocpu" offset="0" flags="0"/>
+		<rom name="mvs.02" merge="mvs.02" size="131072" crc="b34e773d" sha1="3bcf44bf06c35814cff29d244142db7abe05bd39" region="audiocpu" offset="28000" flags="0"/>
+		<rom name="mvs.11m" merge="mvs.11m" size="4194304" crc="86219770" sha1="4e5b68d382a5aa37f8b0b6434c53a2b95f5f9a4d" region="qsound" offset="0" flags="140"/>
+		<rom name="mvs.12m" merge="mvs.12m" size="4194304" crc="f2fd7f68" sha1="28a30d55d3eaf963006c7cbe7c288099cd3ba536" region="qsound" offset="400000" flags="140"/>
+		<rom name="mshvsfj.key" size="20" crc="565eeebb" sha1="762844b59b2fcf529a26ad3dde8282415db926b3" region="key" offset="0" flags="0"/>
+		<device_ref name="m68000"/>
+		<device_ref name="timer"/>
+		<device_ref name="z80"/>
+		<device_ref name="93c46_16"/>
+		<device_ref name="screen"/>
+		<device_ref name="gfxdecode"/>
+		<device_ref name="palette"/>
+		<device_ref name="speaker"/>
+		<device_ref name="speaker"/>
+		<device_ref name="qsound_hle"/>
+		<chip type="cpu" tag="maincpu" name="Motorola MC68000" clock="16000000"/>
+		<chip type="cpu" tag="audiocpu" name="Zilog Z80" clock="8000000"/>
+		<chip type="audio" tag="lspeaker" name="Speaker"/>
+		<chip type="audio" tag="rspeaker" name="Speaker"/>
+		<chip type="audio" tag="qsound" name="QSound (HLE)" clock="60000000"/>
+		<display tag="screen" type="raster" rotate="0" width="384" height="224" refresh="59.637405" pixclock="8000000" htotal="512" hbend="64" hbstart="448" vtotal="262" vbend="16" vbstart="240" />
+		<sound channels="2"/>
+		<input players="2" coins="2" service="yes">
+			<control type="joy" player="1" buttons="6" ways="8"/>
+			<control type="joy" player="2" buttons="6" ways="8"/>
+		</input>
+		<port tag=":DIGITALVOL">
+		</port>
+		<port tag=":EEPROMOUT">
+		</port>
+		<port tag=":IN0">
+		</port>
+		<port tag=":IN1">
+		</port>
+		<port tag=":IN2">
+		</port>
+		<driver status="good" emulation="good" savestate="supported"/>
+	</machine>
+	<machine name="mshvsf_2" sourcefile="cps2.cpp" cloneof="mshvsf" romof="mshvsf">
+		<description>Marvel Super Heroes Vs. Street Fighter (USA 970625) [Unlocked]</description>
+		<year>1997</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="mvsj.03i" size="524288" crc="d8cbb691" sha1="16820cf3bc7285477e61bd598a3ed4ea5e0e770d" region="maincpu" offset="0" flags="140"/>
+		<rom name="mvsj.04i" size="524288" crc="32741ace" sha1="36db3a3aeaf29369977593c051bf5665cffefb2d" region="maincpu" offset="80000" flags="140"/>
+		<rom name="mvs.05h" size="524288" crc="77870dc3" sha1="924a7c82456bb44d7b0be65af11dbe1a2420a3f0" region="maincpu" offset="100000" flags="140"/>
+		<rom name="mvs.06a" merge="mvs.06a" size="524288" crc="959f3030" sha1="fbbaa915324815246738f3426232e623f039ce26" region="maincpu" offset="180000" flags="140"/>
+		<rom name="mvs.07b" merge="mvs.07b" size="524288" crc="7f915bdb" sha1="683da09c5ba55e31b59aa95a8e13c45dc574ab3c" region="maincpu" offset="200000" flags="140"/>
+		<rom name="mvs.08a" merge="mvs.08a" size="524288" crc="c2813884" sha1="49e5d4bc48f90c8146cb6aafb9240aff0119f1a7" region="maincpu" offset="280000" flags="140"/>
+		<rom name="mvs.09b" merge="mvs.09b" size="524288" crc="3ba08818" sha1="9ab132a3cac55fcccebe6c99b6fb0ba1305f8f6e" region="maincpu" offset="300000" flags="140"/>
+		<rom name="mvs.10b" merge="mvs.10b" size="524288" crc="cf0dba98" sha1="f4c1f8a6e7a79ecc6241d5268b3039f8a09ea516" region="maincpu" offset="380000" flags="140"/>
+		<rom name="mvs.13m" merge="mvs.13m" size="4194304" crc="29b05fd9" sha1="e8fdb1ee5515a560eb4256ae4fd99bb1192e1a87" region="gfx" offset="0" flags="6100"/>
+		<rom name="mvs.15m" merge="mvs.15m" size="4194304" crc="faddccf1" sha1="4ed03ea91883a0413325f57edcc1614120b5922c" region="gfx" offset="2" flags="6100"/>
+		<rom name="mvs.17m" merge="mvs.17m" size="4194304" crc="97aaf4c7" sha1="6a054921cc14fe080cb3f62c391f8ae3cc7e8ba9" region="gfx" offset="4" flags="6100"/>
+		<rom name="mvs.19m" merge="mvs.19m" size="4194304" crc="cb70e915" sha1="da4d2480d348ac6dfd01256a88f4f3db8357ae46" region="gfx" offset="6" flags="6100"/>
+		<rom name="mvs.14m" merge="mvs.14m" size="4194304" crc="b3b1972d" sha1="0f2c3fb7de014181ee481ec35d0578b2c116c2dc" region="gfx" offset="1000000" flags="6100"/>
+		<rom name="mvs.16m" merge="mvs.16m" size="4194304" crc="08aadb5d" sha1="3a2c222eca3e7df80ce69951b3db6442312751a4" region="gfx" offset="1000002" flags="6100"/>
+		<rom name="mvs.18m" merge="mvs.18m" size="4194304" crc="c1228b35" sha1="7afdfb552888c79d0fbb30242b3d917b87fad57a" region="gfx" offset="1000004" flags="6100"/>
+		<rom name="mvs.20m" merge="mvs.20m" size="4194304" crc="366cc6c2" sha1="6f2a789087c8e404c5227b927fa8328c03593243" region="gfx" offset="1000006" flags="6100"/>
+		<rom name="mvs.01" merge="mvs.01" size="131072" crc="68252324" sha1="138ef320ef27956b2ab5591d49a1315b7b0a194c" region="audiocpu" offset="0" flags="0"/>
+		<rom name="mvs.02" merge="mvs.02" size="131072" crc="b34e773d" sha1="3bcf44bf06c35814cff29d244142db7abe05bd39" region="audiocpu" offset="28000" flags="0"/>
+		<rom name="mvs.11m" merge="mvs.11m" size="4194304" crc="86219770" sha1="4e5b68d382a5aa37f8b0b6434c53a2b95f5f9a4d" region="qsound" offset="0" flags="140"/>
+		<rom name="mvs.12m" merge="mvs.12m" size="4194304" crc="f2fd7f68" sha1="28a30d55d3eaf963006c7cbe7c288099cd3ba536" region="qsound" offset="400000" flags="140"/>
+		<rom name="mshvsfj.key" size="20" crc="565eeebb" sha1="762844b59b2fcf529a26ad3dde8282415db926b3" region="key" offset="0" flags="0"/>
+		<device_ref name="m68000"/>
+		<device_ref name="timer"/>
+		<device_ref name="z80"/>
+		<device_ref name="93c46_16"/>
+		<device_ref name="screen"/>
+		<device_ref name="gfxdecode"/>
+		<device_ref name="palette"/>
+		<device_ref name="speaker"/>
+		<device_ref name="speaker"/>
+		<device_ref name="qsound_hle"/>
+		<chip type="cpu" tag="maincpu" name="Motorola MC68000" clock="16000000"/>
+		<chip type="cpu" tag="audiocpu" name="Zilog Z80" clock="8000000"/>
+		<chip type="audio" tag="lspeaker" name="Speaker"/>
+		<chip type="audio" tag="rspeaker" name="Speaker"/>
+		<chip type="audio" tag="qsound" name="QSound (HLE)" clock="60000000"/>
+		<display tag="screen" type="raster" rotate="0" width="384" height="224" refresh="59.637405" pixclock="8000000" htotal="512" hbend="64" hbstart="448" vtotal="262" vbend="16" vbstart="240" />
+		<sound channels="2"/>
+		<input players="2" coins="2" service="yes">
+			<control type="joy" player="1" buttons="6" ways="8"/>
+			<control type="joy" player="2" buttons="6" ways="8"/>
+		</input>
+		<port tag=":DIGITALVOL">
+		</port>
+		<port tag=":EEPROMOUT">
+		</port>
+		<port tag=":IN0">
+		</port>
+		<port tag=":IN1">
+		</port>
+		<port tag=":IN2">
+		</port>
+		<driver status="good" emulation="good" savestate="supported"/>
+	</machine>
+</mame>

@@ -1,0 +1,6 @@
+        <patch offset="0x09918">92 a2 0f a5 92 52</patch>
+        <patch offset="0x034c5c">93 54 12 6b d2 87</patch>
+        <patch offset="0x04fc2e">ac da 94 d8 5c a3 c2 32 39 cb 7b c8 95 4a e9 22 50 6f 1d 70</patch>
+        <patch offset="0x050096">e0 00 70 00 00 01 70 00 20 01 70</patch>
+        <patch offset="0x050514">07 06 0c 08 01 00 03 02 05 04 07 06 09 08 0b 0a 00 0c 05 80 07 06 80 08 0a 80 0c 0b 80 80 80 80 80 80 01 00 03 02 06 05 08 07 80 09 0b 0a 80 0c 80 80 80 80 02 01 04 03 07 80 09 08 ff ff ff ff ff ff ff ff ff ff</patch>
+        <patch offset="0x0100000">b7 2e 6f 73 73 14 62 3b cf 03 5d 4b 1f a2 ca 98 89 58 ab 63 95 44 ff ff ff ff ff ff ff ff ff ff 95 d9 b3 8a 92 9a 62 23 15 88 79 4b bc 0b 73 46 de 5d 39 71 0d f6 ba 02 2a c0 a6 50 68 16 7c f2</patch>

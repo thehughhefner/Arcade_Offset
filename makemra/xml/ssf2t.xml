@@ -1,0 +1,307 @@
+<mame>
+	<machine name="ssf2t_1" sourcefile="cps2.cpp" cloneof="ssf2t" romof="ssf2t>">
+		<description>Super Street Fighter II: The New Legacy (World 201113) [Beta v0.4]</description>
+		<year>2020</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="sfxe.03c" size="524288" crc="2fa1f396" sha1="2aa58309811f34901554b84396556630a22ce9bc" region="maincpu" offset="0" flags="140"/>
+		<rom name="sfxe.04a" size="524288" crc="d0bc29c6" sha1="d9f89bcd79cba26db2100a00dd7bd8ee6ecb75f3" region="maincpu" offset="80000" flags="140"/>
+		<rom name="sfxe.05" size="524288" crc="65222964" sha1="025bb708dc5b6365cc7fe60fc3f242511ad8f384" region="maincpu" offset="100000" flags="140"/>
+		<rom name="sfxe.06a" size="524288" crc="8fe9f531" sha1="b5d9ed498f730fdb968992bdec33605db1a007f4" region="maincpu" offset="180000" flags="140"/>
+		<rom name="sfxe.07" size="524288" crc="8a7d0cb6" sha1="27ea0cea73a93c27257bf2a170d1deaf938cc311" region="maincpu" offset="200000" flags="140"/>
+		<rom name="sfxe.08" size="524288" crc="74c24062" sha1="f3eca09e0544c6aa46b0c4bead2246ab1e9a97d9" region="maincpu" offset="280000" flags="140"/>
+		<rom name="sfx.09" size="524288" crc="642fae3f" sha1="746df99b826b9837bba267104132161153c1daff" region="maincpu" offset="300000" flags="140"/>
+		<rom name="sfx.13m" size="2097152" crc="cf94d275" sha1="bf2a6d98a656d1cb5734da7836686242d3211137" region="gfx" offset="0" flags="6100"/>
+		<rom name="sfx.15m" size="2097152" crc="5eb703af" sha1="4b302dbb66e8a5c2ad92798699391e981bada427" region="gfx" offset="2" flags="6100"/>
+		<rom name="sfx.17m" size="2097152" crc="ffa60e0f" sha1="b21b1c749a8241440879bf8e7cb33968ccef97e5" region="gfx" offset="4" flags="6100"/>
+		<rom name="sfx.19m" size="2097152" crc="34e825c5" sha1="4d320fc96d1ef0b9928a8ce801734245a4c097a5" region="gfx" offset="6" flags="6100"/>
+		<rom name="sfx.14m" size="1048576" crc="b7cc32e7" sha1="0f4d26af338dab5dce5b7b34d32ad0c573434ace" region="gfx" offset="800000" flags="6100"/>
+		<rom name="sfx.16m" size="1048576" crc="8376ad18" sha1="f4456833fb396e6501f4174c0fe5fd63ea40a188" region="gfx" offset="800002" flags="6100"/>
+		<rom name="sfx.18m" size="1048576" crc="f5b1b336" sha1="4b060501e56b9d61294748da5387cdae5280ec4d" region="gfx" offset="800004" flags="6100"/>
+		<rom name="sfx.20m" size="1048576" crc="459d5c6b" sha1="32b11ba7a12004aff810d719bff7508204c7b7c0" region="gfx" offset="800006" flags="6100"/>
+		<rom name="sfx.21m" size="1048576" crc="e32854af" sha1="1a5e11e9caa2b96108d89ae660ef1f6bcb469a74" region="gfx" offset="c00000" flags="6100"/>
+		<rom name="sfx.23m" size="1048576" crc="760f2927" sha1="491e28e14ee06821fc9e709efa7b91313bc0c2db" region="gfx" offset="c00002" flags="6100"/>
+		<rom name="sfx.25m" size="1048576" crc="1ee90208" sha1="83df1d9953560edddc2951ea426d29fb014e6a8a" region="gfx" offset="c00004" flags="6100"/>
+		<rom name="sfx.27m" size="1048576" crc="f814400f" sha1="ad6921af36d0bd5dfb89b1fb53c3ca3fd92d7204" region="gfx" offset="c00006" flags="6100"/>
+		<rom name="sfx.01" size="131072" crc="b47b8835" sha1="c8b2d50fe3a329bd0592ea160d505155d873dab1" region="audiocpu" offset="0" flags="0"/>
+		<rom name="sfx.02" size="131072" crc="0022633f" sha1="cab3afc79da53e3887eb1ccd1f4d19790728e6cd" region="audiocpu" offset="28000" flags="0"/>
+		<rom name="sfx.11m" size="2097152" crc="9bdbd476" sha1="a8520f77f30b97aae36408e0c4ca1ebbde1808a5" region="qsound" offset="0" flags="140"/>
+		<rom name="sfx.12m" size="2097152" crc="a05e3aab" sha1="d4eb9cae66c74e956569fea8b815156fbd420f83" region="qsound" offset="200000" flags="140"/>
+		<rom name="ssf2t.key" size="20" crc="524d608e" sha1="fcd2b9a1a640a0dee4a674dc9cfb3975466f7757" region="key" offset="0" flags="0"/>
+		<device_ref name="m68000"/>
+		<device_ref name="timer"/>
+		<device_ref name="z80"/>
+		<device_ref name="93c46_16"/>
+		<device_ref name="screen"/>
+		<device_ref name="gfxdecode"/>
+		<device_ref name="palette"/>
+		<device_ref name="speaker"/>
+		<device_ref name="speaker"/>
+		<device_ref name="qsound_hle"/>
+		<chip type="cpu" tag="maincpu" name="Motorola MC68000" clock="16000000"/>
+		<chip type="cpu" tag="audiocpu" name="Zilog Z80" clock="8000000"/>
+		<chip type="audio" tag="lspeaker" name="Speaker"/>
+		<chip type="audio" tag="rspeaker" name="Speaker"/>
+		<chip type="audio" tag="qsound" name="QSound (HLE)" clock="60000000"/>
+		<display tag="screen" type="raster" rotate="0" width="384" height="224" refresh="59.637405" pixclock="8000000" htotal="512" hbend="64" hbstart="448" vtotal="262" vbend="16" vbstart="240" />
+		<sound channels="2"/>
+		<input players="2" coins="2" service="yes">
+			<control type="joy" player="1" buttons="6" ways="8"/>
+			<control type="joy" player="2" buttons="6" ways="8"/>
+		</input>
+		<port tag=":DIGITALVOL">
+		</port>
+		<port tag=":EEPROMOUT">
+		</port>
+		<port tag=":IN0">
+		</port>
+		<port tag=":IN1">
+		</port>
+		<port tag=":IN2">
+		</port>
+		<driver status="good" emulation="good" savestate="supported"/>
+	</machine>
+	<machine name="ssf2t_2" sourcefile="cps2.cpp" cloneof="ssf2t" romof="ssf2t>">
+		<description>Super Street Fighter II: The New Legacy (World 210611) [Beta v0.5]</description>
+		<year>2021</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="sfxe.03c" size="524288" crc="2fa1f396" sha1="2aa58309811f34901554b84396556630a22ce9bc" region="maincpu" offset="0" flags="140"/>
+		<rom name="sfxe.04a" size="524288" crc="d0bc29c6" sha1="d9f89bcd79cba26db2100a00dd7bd8ee6ecb75f3" region="maincpu" offset="80000" flags="140"/>
+		<rom name="sfxe.05" size="524288" crc="65222964" sha1="025bb708dc5b6365cc7fe60fc3f242511ad8f384" region="maincpu" offset="100000" flags="140"/>
+		<rom name="sfxe.06a" size="524288" crc="8fe9f531" sha1="b5d9ed498f730fdb968992bdec33605db1a007f4" region="maincpu" offset="180000" flags="140"/>
+		<rom name="sfxe.07" size="524288" crc="8a7d0cb6" sha1="27ea0cea73a93c27257bf2a170d1deaf938cc311" region="maincpu" offset="200000" flags="140"/>
+		<rom name="sfxe.08" size="524288" crc="74c24062" sha1="f3eca09e0544c6aa46b0c4bead2246ab1e9a97d9" region="maincpu" offset="280000" flags="140"/>
+		<rom name="sfx.09" size="524288" crc="642fae3f" sha1="746df99b826b9837bba267104132161153c1daff" region="maincpu" offset="300000" flags="140"/>
+		<rom name="sfx.13m" size="2097152" crc="cf94d275" sha1="bf2a6d98a656d1cb5734da7836686242d3211137" region="gfx" offset="0" flags="6100"/>
+		<rom name="sfx.15m" size="2097152" crc="5eb703af" sha1="4b302dbb66e8a5c2ad92798699391e981bada427" region="gfx" offset="2" flags="6100"/>
+		<rom name="sfx.17m" size="2097152" crc="ffa60e0f" sha1="b21b1c749a8241440879bf8e7cb33968ccef97e5" region="gfx" offset="4" flags="6100"/>
+		<rom name="sfx.19m" size="2097152" crc="34e825c5" sha1="4d320fc96d1ef0b9928a8ce801734245a4c097a5" region="gfx" offset="6" flags="6100"/>
+		<rom name="sfx.14m" size="1048576" crc="b7cc32e7" sha1="0f4d26af338dab5dce5b7b34d32ad0c573434ace" region="gfx" offset="800000" flags="6100"/>
+		<rom name="sfx.16m" size="1048576" crc="8376ad18" sha1="f4456833fb396e6501f4174c0fe5fd63ea40a188" region="gfx" offset="800002" flags="6100"/>
+		<rom name="sfx.18m" size="1048576" crc="f5b1b336" sha1="4b060501e56b9d61294748da5387cdae5280ec4d" region="gfx" offset="800004" flags="6100"/>
+		<rom name="sfx.20m" size="1048576" crc="459d5c6b" sha1="32b11ba7a12004aff810d719bff7508204c7b7c0" region="gfx" offset="800006" flags="6100"/>
+		<rom name="sfx.21m" size="1048576" crc="e32854af" sha1="1a5e11e9caa2b96108d89ae660ef1f6bcb469a74" region="gfx" offset="c00000" flags="6100"/>
+		<rom name="sfx.23m" size="1048576" crc="760f2927" sha1="491e28e14ee06821fc9e709efa7b91313bc0c2db" region="gfx" offset="c00002" flags="6100"/>
+		<rom name="sfx.25m" size="1048576" crc="1ee90208" sha1="83df1d9953560edddc2951ea426d29fb014e6a8a" region="gfx" offset="c00004" flags="6100"/>
+		<rom name="sfx.27m" size="1048576" crc="f814400f" sha1="ad6921af36d0bd5dfb89b1fb53c3ca3fd92d7204" region="gfx" offset="c00006" flags="6100"/>
+		<rom name="sfx.01" size="131072" crc="b47b8835" sha1="c8b2d50fe3a329bd0592ea160d505155d873dab1" region="audiocpu" offset="0" flags="0"/>
+		<rom name="sfx.02" size="131072" crc="0022633f" sha1="cab3afc79da53e3887eb1ccd1f4d19790728e6cd" region="audiocpu" offset="28000" flags="0"/>
+		<rom name="sfx.11m" size="2097152" crc="9bdbd476" sha1="a8520f77f30b97aae36408e0c4ca1ebbde1808a5" region="qsound" offset="0" flags="140"/>
+		<rom name="sfx.12m" size="2097152" crc="a05e3aab" sha1="d4eb9cae66c74e956569fea8b815156fbd420f83" region="qsound" offset="200000" flags="140"/>
+		<rom name="ssf2t.key" size="20" crc="524d608e" sha1="fcd2b9a1a640a0dee4a674dc9cfb3975466f7757" region="key" offset="0" flags="0"/>
+		<device_ref name="m68000"/>
+		<device_ref name="timer"/>
+		<device_ref name="z80"/>
+		<device_ref name="93c46_16"/>
+		<device_ref name="screen"/>
+		<device_ref name="gfxdecode"/>
+		<device_ref name="palette"/>
+		<device_ref name="speaker"/>
+		<device_ref name="speaker"/>
+		<device_ref name="qsound_hle"/>
+		<chip type="cpu" tag="maincpu" name="Motorola MC68000" clock="16000000"/>
+		<chip type="cpu" tag="audiocpu" name="Zilog Z80" clock="8000000"/>
+		<chip type="audio" tag="lspeaker" name="Speaker"/>
+		<chip type="audio" tag="rspeaker" name="Speaker"/>
+		<chip type="audio" tag="qsound" name="QSound (HLE)" clock="60000000"/>
+		<display tag="screen" type="raster" rotate="0" width="384" height="224" refresh="59.637405" pixclock="8000000" htotal="512" hbend="64" hbstart="448" vtotal="262" vbend="16" vbstart="240" />
+		<sound channels="2"/>
+		<input players="2" coins="2" service="yes">
+			<control type="joy" player="1" buttons="6" ways="8"/>
+			<control type="joy" player="2" buttons="6" ways="8"/>
+		</input>
+		<port tag=":DIGITALVOL">
+		</port>
+		<port tag=":EEPROMOUT">
+		</port>
+		<port tag=":IN0">
+		</port>
+		<port tag=":IN1">
+		</port>
+		<port tag=":IN2">
+		</port>
+		<driver status="good" emulation="good" savestate="supported"/>
+	</machine>
+	<machine name="ssf2t_3" sourcefile="cps2.cpp" cloneof="ssf2t" romof="ssf2t">
+		<description>Super Street Fighter II Turbo (Asia 940223) [Training Edition]</description>
+		<year>1994</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="sfxa.03c" size="524288" crc="04b9ff34" sha1="69feb2c9c03634e6f964dae310d7b72b4c76140d" region="maincpu" offset="0" flags="140"/>
+		<rom name="sfxa.04a" size="524288" crc="16ea5f7a" sha1="08404c6a79b9a36eceb06e0d3e1d747a21fac186" region="maincpu" offset="80000" flags="140"/>
+		<rom name="sfxa.05" size="524288" crc="53d61f0c" sha1="b30e666d0dae7b738a76a27d1d68fbb9a630c27c" region="maincpu" offset="100000" flags="140"/>
+		<rom name="sfxa.06a" size="524288" crc="066d09b5" sha1="221972629b094809f7c431f86b3f3b10354487b5" region="maincpu" offset="180000" flags="140"/>
+		<rom name="sfxa.07" size="524288" crc="a428257b" sha1="620f3a264b2c82ef1af0e33310d110e1f3e6fddf" region="maincpu" offset="200000" flags="140"/>
+		<rom name="sfxa.08" size="524288" crc="39be596c" sha1="f7ab80e64cbb703535dd39b875273eefa57df489" region="maincpu" offset="280000" flags="140"/>
+		<rom name="sfx.09" merge="sfx.09" size="524288" crc="642fae3f" sha1="746df99b826b9837bba267104132161153c1daff" region="maincpu" offset="300000" flags="140"/>
+		<rom name="sfx.13m" merge="sfx.13m" size="2097152" crc="cf94d275" sha1="bf2a6d98a656d1cb5734da7836686242d3211137" region="gfx" offset="0" flags="6100"/>
+		<rom name="sfx.15m" merge="sfx.15m" size="2097152" crc="5eb703af" sha1="4b302dbb66e8a5c2ad92798699391e981bada427" region="gfx" offset="2" flags="6100"/>
+		<rom name="sfx.17m" merge="sfx.17m" size="2097152" crc="ffa60e0f" sha1="b21b1c749a8241440879bf8e7cb33968ccef97e5" region="gfx" offset="4" flags="6100"/>
+		<rom name="sfx.19m" merge="sfx.19m" size="2097152" crc="34e825c5" sha1="4d320fc96d1ef0b9928a8ce801734245a4c097a5" region="gfx" offset="6" flags="6100"/>
+		<rom name="sfx.14m" merge="sfx.14m" size="1048576" crc="b7cc32e7" sha1="0f4d26af338dab5dce5b7b34d32ad0c573434ace" region="gfx" offset="800000" flags="6100"/>
+		<rom name="sfx.16m" merge="sfx.16m" size="1048576" crc="8376ad18" sha1="f4456833fb396e6501f4174c0fe5fd63ea40a188" region="gfx" offset="800002" flags="6100"/>
+		<rom name="sfx.18m" merge="sfx.18m" size="1048576" crc="f5b1b336" sha1="4b060501e56b9d61294748da5387cdae5280ec4d" region="gfx" offset="800004" flags="6100"/>
+		<rom name="sfx.20m" merge="sfx.20m" size="1048576" crc="459d5c6b" sha1="32b11ba7a12004aff810d719bff7508204c7b7c0" region="gfx" offset="800006" flags="6100"/>
+		<rom name="sfx.21m" merge="sfx.21m" size="1048576" crc="e32854af" sha1="1a5e11e9caa2b96108d89ae660ef1f6bcb469a74" region="gfx" offset="c00000" flags="6100"/>
+		<rom name="sfx.23m" merge="sfx.23m" size="1048576" crc="760f2927" sha1="491e28e14ee06821fc9e709efa7b91313bc0c2db" region="gfx" offset="c00002" flags="6100"/>
+		<rom name="sfx.25m" merge="sfx.25m" size="1048576" crc="1ee90208" sha1="83df1d9953560edddc2951ea426d29fb014e6a8a" region="gfx" offset="c00004" flags="6100"/>
+		<rom name="sfx.27m" merge="sfx.27m" size="1048576" crc="f814400f" sha1="ad6921af36d0bd5dfb89b1fb53c3ca3fd92d7204" region="gfx" offset="c00006" flags="6100"/>
+		<rom name="sfx.01" merge="sfx.01" size="131072" crc="b47b8835" sha1="c8b2d50fe3a329bd0592ea160d505155d873dab1" region="audiocpu" offset="0" flags="0"/>
+		<rom name="sfx.02" merge="sfx.02" size="131072" crc="0022633f" sha1="cab3afc79da53e3887eb1ccd1f4d19790728e6cd" region="audiocpu" offset="28000" flags="0"/>
+		<rom name="sfx.11m" merge="sfx.11m" size="2097152" crc="9bdbd476" sha1="a8520f77f30b97aae36408e0c4ca1ebbde1808a5" region="qsound" offset="0" flags="140"/>
+		<rom name="sfx.12m" merge="sfx.12m" size="2097152" crc="a05e3aab" sha1="d4eb9cae66c74e956569fea8b815156fbd420f83" region="qsound" offset="200000" flags="140"/>
+		<rom name="ssf2ta.key" size="20" crc="c11fa8e9" sha1="9e9fcfaa40e792b0ebf4585f1f8995e5e3fee3fd" region="key" offset="0" flags="0"/>
+		<device_ref name="m68000"/>
+		<device_ref name="timer"/>
+		<device_ref name="z80"/>
+		<device_ref name="93c46_16"/>
+		<device_ref name="screen"/>
+		<device_ref name="gfxdecode"/>
+		<device_ref name="palette"/>
+		<device_ref name="speaker"/>
+		<device_ref name="speaker"/>
+		<device_ref name="qsound_hle"/>
+		<chip type="cpu" tag="maincpu" name="Motorola MC68000" clock="16000000"/>
+		<chip type="cpu" tag="audiocpu" name="Zilog Z80" clock="8000000"/>
+		<chip type="audio" tag="lspeaker" name="Speaker"/>
+		<chip type="audio" tag="rspeaker" name="Speaker"/>
+		<chip type="audio" tag="qsound" name="QSound (HLE)" clock="60000000"/>
+		<display tag="screen" type="raster" rotate="0" width="384" height="224" refresh="59.637405" pixclock="8000000" htotal="512" hbend="64" hbstart="448" vtotal="262" vbend="16" vbstart="240" />
+		<sound channels="2"/>
+		<input players="2" coins="2" service="yes">
+			<control type="joy" player="1" buttons="6" ways="8"/>
+			<control type="joy" player="2" buttons="6" ways="8"/>
+		</input>
+		<port tag=":DIGITALVOL">
+		</port>
+		<port tag=":EEPROMOUT">
+		</port>
+		<port tag=":IN0">
+		</port>
+		<port tag=":IN1">
+		</port>
+		<port tag=":IN2">
+		</port>
+		<driver status="good" emulation="good" savestate="supported"/>
+	</machine>
+	<machine name="ssf2t_4" sourcefile="cps2.cpp" cloneof="ssf2t" romof="ssf2t">
+		<description>Super Street Fighter II X: Grand Master Challenge (Japan 940311) [Free Play]</description>
+		<year>1994</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="sfxj.03d" size="524288" crc="50b52b37" sha1="dc0330fcbffbc0077faa20d34a28d6a49b04639e" region="maincpu" offset="0" flags="140"/>
+		<rom name="sfxj.04a" size="524288" crc="af7767b4" sha1="61e7364408bf07c01634913c112b6245acce48ab" region="maincpu" offset="80000" flags="140"/>
+		<rom name="sfxj.05" size="524288" crc="f4ff18f5" sha1="aa713c9e1a2eba35bf1c9b40bb262ff7e46b9ce4" region="maincpu" offset="100000" flags="140"/>
+		<rom name="sfxj.06b" size="524288" crc="413477c2" sha1="63bf120566db0c23cc726e7cdbf78428582c694f" region="maincpu" offset="180000" flags="140"/>
+		<rom name="sfxj.07a" size="524288" crc="a18b3d83" sha1="f08dd30a1b864fdd5d05d58a0b43e65077702d32" region="maincpu" offset="200000" flags="140"/>
+		<rom name="sfxj.08" size="524288" crc="2de76f10" sha1="8cbe96dfeaa41306caa2819b82272ce3b0b9f926" region="maincpu" offset="280000" flags="140"/>
+		<rom name="sfx.09" merge="sfx.09" size="524288" crc="642fae3f" sha1="746df99b826b9837bba267104132161153c1daff" region="maincpu" offset="300000" flags="140"/>
+		<rom name="sfx.13m" merge="sfx.13m" size="2097152" crc="cf94d275" sha1="bf2a6d98a656d1cb5734da7836686242d3211137" region="gfx" offset="0" flags="6100"/>
+		<rom name="sfx.15m" merge="sfx.15m" size="2097152" crc="5eb703af" sha1="4b302dbb66e8a5c2ad92798699391e981bada427" region="gfx" offset="2" flags="6100"/>
+		<rom name="sfx.17m" merge="sfx.17m" size="2097152" crc="ffa60e0f" sha1="b21b1c749a8241440879bf8e7cb33968ccef97e5" region="gfx" offset="4" flags="6100"/>
+		<rom name="sfx.19m" merge="sfx.19m" size="2097152" crc="34e825c5" sha1="4d320fc96d1ef0b9928a8ce801734245a4c097a5" region="gfx" offset="6" flags="6100"/>
+		<rom name="sfx.14m" merge="sfx.14m" size="1048576" crc="b7cc32e7" sha1="0f4d26af338dab5dce5b7b34d32ad0c573434ace" region="gfx" offset="800000" flags="6100"/>
+		<rom name="sfx.16m" merge="sfx.16m" size="1048576" crc="8376ad18" sha1="f4456833fb396e6501f4174c0fe5fd63ea40a188" region="gfx" offset="800002" flags="6100"/>
+		<rom name="sfx.18m" merge="sfx.18m" size="1048576" crc="f5b1b336" sha1="4b060501e56b9d61294748da5387cdae5280ec4d" region="gfx" offset="800004" flags="6100"/>
+		<rom name="sfx.20m" merge="sfx.20m" size="1048576" crc="459d5c6b" sha1="32b11ba7a12004aff810d719bff7508204c7b7c0" region="gfx" offset="800006" flags="6100"/>
+		<rom name="sfx.21m" merge="sfx.21m" size="1048576" crc="e32854af" sha1="1a5e11e9caa2b96108d89ae660ef1f6bcb469a74" region="gfx" offset="c00000" flags="6100"/>
+		<rom name="sfx.23m" merge="sfx.23m" size="1048576" crc="760f2927" sha1="491e28e14ee06821fc9e709efa7b91313bc0c2db" region="gfx" offset="c00002" flags="6100"/>
+		<rom name="sfx.25m" merge="sfx.25m" size="1048576" crc="1ee90208" sha1="83df1d9953560edddc2951ea426d29fb014e6a8a" region="gfx" offset="c00004" flags="6100"/>
+		<rom name="sfx.27m" merge="sfx.27m" size="1048576" crc="f814400f" sha1="ad6921af36d0bd5dfb89b1fb53c3ca3fd92d7204" region="gfx" offset="c00006" flags="6100"/>
+		<rom name="sfx.01" merge="sfx.01" size="131072" crc="b47b8835" sha1="c8b2d50fe3a329bd0592ea160d505155d873dab1" region="audiocpu" offset="0" flags="0"/>
+		<rom name="sfx.02" merge="sfx.02" size="131072" crc="0022633f" sha1="cab3afc79da53e3887eb1ccd1f4d19790728e6cd" region="audiocpu" offset="28000" flags="0"/>
+		<rom name="sfx.11m" merge="sfx.11m" size="2097152" crc="9bdbd476" sha1="a8520f77f30b97aae36408e0c4ca1ebbde1808a5" region="qsound" offset="0" flags="140"/>
+		<rom name="sfx.12m" merge="sfx.12m" size="2097152" crc="a05e3aab" sha1="d4eb9cae66c74e956569fea8b815156fbd420f83" region="qsound" offset="200000" flags="140"/>
+		<rom name="ssf2xj.key" size="20" crc="160d1424" sha1="187baff83b54acfdcedd9b9222a4cc768040c622" region="key" offset="0" flags="0"/>
+		<device_ref name="m68000"/>
+		<device_ref name="timer"/>
+		<device_ref name="z80"/>
+		<device_ref name="93c46_16"/>
+		<device_ref name="screen"/>
+		<device_ref name="gfxdecode"/>
+		<device_ref name="palette"/>
+		<device_ref name="speaker"/>
+		<device_ref name="speaker"/>
+		<device_ref name="qsound_hle"/>
+		<chip type="cpu" tag="maincpu" name="Motorola MC68000" clock="16000000"/>
+		<chip type="cpu" tag="audiocpu" name="Zilog Z80" clock="8000000"/>
+		<chip type="audio" tag="lspeaker" name="Speaker"/>
+		<chip type="audio" tag="rspeaker" name="Speaker"/>
+		<chip type="audio" tag="qsound" name="QSound (HLE)" clock="60000000"/>
+		<display tag="screen" type="raster" rotate="0" width="384" height="224" refresh="59.637405" pixclock="8000000" htotal="512" hbend="64" hbstart="448" vtotal="262" vbend="16" vbstart="240" />
+		<sound channels="2"/>
+		<input players="2" coins="2" service="yes">
+			<control type="joy" player="1" buttons="6" ways="8"/>
+			<control type="joy" player="2" buttons="6" ways="8"/>
+		</input>
+		<port tag=":DIGITALVOL">
+		</port>
+		<port tag=":EEPROMOUT">
+		</port>
+		<port tag=":IN0">
+		</port>
+		<port tag=":IN1">
+		</port>
+		<port tag=":IN2">
+		</port>
+		<driver status="good" emulation="good" savestate="supported"/>
+	</machine>
+	<machine name="ssf2t_5" sourcefile="cps2.cpp" cloneof="ssf2t" romof="ssf2t">
+		<description>Super Street Fighter II X: Grand Master Challenge (Japan 940223) [Free Play]</description>
+		<year>1994</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="sfxj.03c" size="524288" crc="a7417b79" sha1="189c3ed546bb2844e9fa9fe7e9aacef728bc8939" region="maincpu" offset="0" flags="140"/>
+		<rom name="sfxj.04a" size="524288" crc="af7767b4" sha1="61e7364408bf07c01634913c112b6245acce48ab" region="maincpu" offset="80000" flags="140"/>
+		<rom name="sfxj.05" size="524288" crc="f4ff18f5" sha1="aa713c9e1a2eba35bf1c9b40bb262ff7e46b9ce4" region="maincpu" offset="100000" flags="140"/>
+		<rom name="sfxj.06a" size="524288" crc="260d0370" sha1="5339cf87000caef74d491815391be59cfd701c8b" region="maincpu" offset="180000" flags="140"/>
+		<rom name="sfxj.07" size="524288" crc="1324d02a" sha1="c23a6ea09819bd33b6e2f58aa28c317ce53a46a0" region="maincpu" offset="200000" flags="140"/>
+		<rom name="sfxj.08" size="524288" crc="2de76f10" sha1="8cbe96dfeaa41306caa2819b82272ce3b0b9f926" region="maincpu" offset="280000" flags="140"/>
+		<rom name="sfx.09" merge="sfx.09" size="524288" crc="642fae3f" sha1="746df99b826b9837bba267104132161153c1daff" region="maincpu" offset="300000" flags="140"/>
+		<rom name="sfx.13m" merge="sfx.13m" size="2097152" crc="cf94d275" sha1="bf2a6d98a656d1cb5734da7836686242d3211137" region="gfx" offset="0" flags="6100"/>
+		<rom name="sfx.15m" merge="sfx.15m" size="2097152" crc="5eb703af" sha1="4b302dbb66e8a5c2ad92798699391e981bada427" region="gfx" offset="2" flags="6100"/>
+		<rom name="sfx.17m" merge="sfx.17m" size="2097152" crc="ffa60e0f" sha1="b21b1c749a8241440879bf8e7cb33968ccef97e5" region="gfx" offset="4" flags="6100"/>
+		<rom name="sfx.19m" merge="sfx.19m" size="2097152" crc="34e825c5" sha1="4d320fc96d1ef0b9928a8ce801734245a4c097a5" region="gfx" offset="6" flags="6100"/>
+		<rom name="sfx.14m" merge="sfx.14m" size="1048576" crc="b7cc32e7" sha1="0f4d26af338dab5dce5b7b34d32ad0c573434ace" region="gfx" offset="800000" flags="6100"/>
+		<rom name="sfx.16m" merge="sfx.16m" size="1048576" crc="8376ad18" sha1="f4456833fb396e6501f4174c0fe5fd63ea40a188" region="gfx" offset="800002" flags="6100"/>
+		<rom name="sfx.18m" merge="sfx.18m" size="1048576" crc="f5b1b336" sha1="4b060501e56b9d61294748da5387cdae5280ec4d" region="gfx" offset="800004" flags="6100"/>
+		<rom name="sfx.20m" merge="sfx.20m" size="1048576" crc="459d5c6b" sha1="32b11ba7a12004aff810d719bff7508204c7b7c0" region="gfx" offset="800006" flags="6100"/>
+		<rom name="sfx.21m" merge="sfx.21m" size="1048576" crc="e32854af" sha1="1a5e11e9caa2b96108d89ae660ef1f6bcb469a74" region="gfx" offset="c00000" flags="6100"/>
+		<rom name="sfx.23m" merge="sfx.23m" size="1048576" crc="760f2927" sha1="491e28e14ee06821fc9e709efa7b91313bc0c2db" region="gfx" offset="c00002" flags="6100"/>
+		<rom name="sfx.25m" merge="sfx.25m" size="1048576" crc="1ee90208" sha1="83df1d9953560edddc2951ea426d29fb014e6a8a" region="gfx" offset="c00004" flags="6100"/>
+		<rom name="sfx.27m" merge="sfx.27m" size="1048576" crc="f814400f" sha1="ad6921af36d0bd5dfb89b1fb53c3ca3fd92d7204" region="gfx" offset="c00006" flags="6100"/>
+		<rom name="sfx.01" merge="sfx.01" size="131072" crc="b47b8835" sha1="c8b2d50fe3a329bd0592ea160d505155d873dab1" region="audiocpu" offset="0" flags="0"/>
+		<rom name="sfx.02" merge="sfx.02" size="131072" crc="0022633f" sha1="cab3afc79da53e3887eb1ccd1f4d19790728e6cd" region="audiocpu" offset="28000" flags="0"/>
+		<rom name="sfx.11m" merge="sfx.11m" size="2097152" crc="9bdbd476" sha1="a8520f77f30b97aae36408e0c4ca1ebbde1808a5" region="qsound" offset="0" flags="140"/>
+		<rom name="sfx.12m" merge="sfx.12m" size="2097152" crc="a05e3aab" sha1="d4eb9cae66c74e956569fea8b815156fbd420f83" region="qsound" offset="200000" flags="140"/>
+		<rom name="ssf2xj.key" size="20" crc="160d1424" sha1="187baff83b54acfdcedd9b9222a4cc768040c622" region="key" offset="0" flags="0"/>
+		<device_ref name="m68000"/>
+		<device_ref name="timer"/>
+		<device_ref name="z80"/>
+		<device_ref name="93c46_16"/>
+		<device_ref name="screen"/>
+		<device_ref name="gfxdecode"/>
+		<device_ref name="palette"/>
+		<device_ref name="speaker"/>
+		<device_ref name="speaker"/>
+		<device_ref name="qsound_hle"/>
+		<chip type="cpu" tag="maincpu" name="Motorola MC68000" clock="16000000"/>
+		<chip type="cpu" tag="audiocpu" name="Zilog Z80" clock="8000000"/>
+		<chip type="audio" tag="lspeaker" name="Speaker"/>
+		<chip type="audio" tag="rspeaker" name="Speaker"/>
+		<chip type="audio" tag="qsound" name="QSound (HLE)" clock="60000000"/>
+		<display tag="screen" type="raster" rotate="0" width="384" height="224" refresh="59.637405" pixclock="8000000" htotal="512" hbend="64" hbstart="448" vtotal="262" vbend="16" vbstart="240" />
+		<sound channels="2"/>
+		<input players="2" coins="2" service="yes">
+			<control type="joy" player="1" buttons="6" ways="8"/>
+			<control type="joy" player="2" buttons="6" ways="8"/>
+		</input>
+		<port tag=":DIGITALVOL">
+		</port>
+		<port tag=":EEPROMOUT">
+		</port>
+		<port tag=":IN0">
+		</port>
+		<port tag=":IN1">
+		</port>
+		<port tag=":IN2">
+		</port>
+		<driver status="good" emulation="good" savestate="supported"/>
+	</machine>
+</mame>

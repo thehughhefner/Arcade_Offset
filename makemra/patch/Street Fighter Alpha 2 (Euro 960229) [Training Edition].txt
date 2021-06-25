@@ -1,0 +1,4 @@
+        <patch offset="0x0058b6">f2 6a 38 9e</patch>
+        <patch offset="0x00feca">b8 c4 e0 65</patch>
+        <patch offset="0x02597e">c6 d5 4f dc</patch>
+        <patch offset="0x025c3c">d2 a9 0f 6b</patch>

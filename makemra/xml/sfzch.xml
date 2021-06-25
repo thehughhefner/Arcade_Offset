@@ -1,0 +1,77 @@
+<mame>
+	<machine name="sfzch" sourcefile="cps1.cpp" cloneof="sfa" romof="sfzch">
+		<description>Street Fighter Zero (CPS Changer 1.5, Japan 201218)</description>
+		<year>2020</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="sfzch23" size="524288" crc="1140743f" sha1="10bcedb5cca266f2aa3ed99ede6f9a64fc877539" region="maincpu" offset="0" flags="140"/>
+		<rom name="sfza22" size="524288" crc="8d9b2480" sha1="405305c1572908d00eab735f28676fbbadb4fac6" region="maincpu" offset="80000" flags="140"/>
+		<rom name="sfzch21" size="524288" crc="5435225d" sha1="6b1156fd82d0710e244ede39faaae0847c598376" region="maincpu" offset="100000" flags="140"/>
+		<rom name="sfza20" size="524288" crc="806e8f38" sha1="b6d6912aa8f2f590335d7ff9a8214648e7131ebb" region="maincpu" offset="180000" flags="140"/>
+		<rom name="sfz_01.3a" size="524288" crc="0dd53e62" sha1="5f3bcf5ca0fd564d115fe5075a4163d3ee3226df" region="gfx" offset="0" flags="6100"/>
+		<rom name="sfz_02.4a" size="524288" crc="94c31e3f" sha1="2187b3d4977514f2ae486eb33ed76c86121d5745" region="gfx" offset="2" flags="6100"/>
+		<rom name="sfz_03.5a" size="524288" crc="9584ac85" sha1="bbd62d66b0f6909630e801ce5d6331d43f44d741" region="gfx" offset="4" flags="6100"/>
+		<rom name="sfz_04.6a" size="524288" crc="b983624c" sha1="841106bb9453e3dfb7869c4b0e9149cc610d515a" region="gfx" offset="6" flags="6100"/>
+		<rom name="sfz_05.7a" size="524288" crc="2b47b645" sha1="bc6426eff5df9417f32666586744626fa544f7b5" region="gfx" offset="200000" flags="6100"/>
+		<rom name="sfz_06.8a" size="524288" crc="74fd9fb1" sha1="7945472591f3c06970e96611a0363ed8f3d52c36" region="gfx" offset="200002" flags="6100"/>
+		<rom name="sfz_07.9a" size="524288" crc="bb2c734d" sha1="97a06935f86f31755d2ffdc5b56bef53944bdecd" region="gfx" offset="200004" flags="6100"/>
+		<rom name="sfz_08.10a" size="524288" crc="454f7868" sha1="eecccba7542d893bc41676246a20aa4914b79bbc" region="gfx" offset="200006" flags="6100"/>
+		<rom name="sfz_10.3c" size="524288" crc="2a7d675e" sha1="0144ba34a29fb08b41c780ce65bb06d25724e88f" region="gfx" offset="400000" flags="6100"/>
+		<rom name="sfz_11.4c" size="524288" crc="e35546c8" sha1="7b08aa3413494d12c5c550263a5f00b64b98e6ab" region="gfx" offset="400002" flags="6100"/>
+		<rom name="sfz_12.5c" size="524288" crc="f122693a" sha1="71ce901d8d30207e506b6a8d6a4e0fcf3a1b0eac" region="gfx" offset="400004" flags="6100"/>
+		<rom name="sfz_13.6c" size="524288" crc="7cf942c8" sha1="a7109facb97a8a11ddf1b4e07de6ff3164d713a1" region="gfx" offset="400006" flags="6100"/>
+		<rom name="sfz_14.7c" size="524288" crc="09038c81" sha1="3461d70902fbfb92ce40f804be6388276a01d153" region="gfx" offset="600000" flags="6100"/>
+		<rom name="sfz_15.8c" size="524288" crc="1aa17391" sha1="b4d0f760a430b7fc4443b6c94da2659315c5b926" region="gfx" offset="600002" flags="6100"/>
+		<rom name="sfz_16.9c" size="524288" crc="19a5abd6" sha1="73ba1de15c883fdc69fd7dccdb58d00ca512d4ea" region="gfx" offset="600004" flags="6100"/>
+		<rom name="sfz_17.10c" size="524288" crc="248b3b73" sha1="95810a17b1caf6372b33ed3e4ee8a7e51482c70d" region="gfx" offset="600006" flags="6100"/>
+		<rom name="sfz.01" size="131072" crc="ffffec7d" sha1="75b4aef001b72a0f571b51b2b97803facc1832dd" region="audiocpu" offset="0" flags="0"/>
+		<rom name="sfz.02" size="131072" crc="45f46a08" sha1="e32dbd27b52ab708278045b5a829376e55a4ca81" region="audiocpu" offset="28000" flags="0"/>
+		<rom name="sfz.11m" size="2097152" crc="c4b093cd" sha1="256526bb693a0b72443f047e060304c9b739acd1" region="qsound" offset="0" flags="140"/>
+		<rom name="sfz.12m" size="2097152" crc="8bdbc4b4" sha1="0e21c9a75a17a7e7dfd8bb51098c2b9dc4c933ec" region="qsound" offset="200000" flags="140"/>
+		<device_ref name="m68000"/>
+		<device_ref name="z80"/>
+		<device_ref name="screen"/>
+		<device_ref name="gfxdecode"/>
+		<device_ref name="palette"/>
+		<device_ref name="speaker"/>
+		<device_ref name="speaker"/>
+		<device_ref name="qsound_hle"/>
+		<chip type="cpu" tag="maincpu" name="Motorola MC68000" clock="12000000"/>
+		<chip type="cpu" tag="audiocpu" name="Zilog Z80" clock="3579545"/>
+		<chip type="audio" tag="lspeaker" name="Speaker"/>
+		<chip type="audio" tag="rspeaker" name="Speaker"/>
+		<chip type="audio" tag="qsound" name="QSound (HLE)" clock="60000000"/>
+		<display tag="screen" type="raster" rotate="0" width="384" height="224" refresh="59.637405" pixclock="8000000" htotal="512" hbend="64" hbstart="448" vtotal="262" vbend="16" vbstart="240" />
+		<sound channels="1"/>
+		<input players="2" service="yes">
+			<control type="joy" player="1" buttons="6" ways="8"/>
+			<control type="joy" player="2" buttons="6" ways="8"/>
+		</input>
+		<dipswitch name="Unknown" tag="DSWA" mask="255">
+			<dipvalue name="Off" value="255" default="yes"/>
+			<dipvalue name="On" value="0"/>
+		</dipswitch>
+		<dipswitch name="Unknown" tag="DSWB" mask="255">
+			<dipvalue name="Off" value="255" default="yes"/>
+			<dipvalue name="On" value="0"/>
+		</dipswitch>
+		<dipswitch name="Unknown" tag="DSWC" mask="255">
+			<dipvalue name="Off" value="255" default="yes"/>
+			<dipvalue name="On" value="0"/>
+		</dipswitch>
+		<port tag=":DSWA">
+		</port>
+		<port tag=":DSWB">
+		</port>
+		<port tag=":DSWC">
+		</port>
+		<port tag=":IN0">
+		</port>
+		<port tag=":IN1">
+		</port>
+		<port tag=":IN2">
+		</port>
+		<port tag=":IN3">
+		</port>
+		<driver status="good" emulation="good" savestate="supported"/>
+	</machine>
+</mame>

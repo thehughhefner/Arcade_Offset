@@ -1,0 +1,152 @@
+<mame>
+	<machine name="dimahoo_1" sourcefile="cps2.cpp" cloneof="dimahoo" romof="dimahoo">
+		<description>Dimahoo (Euro 000121) [Unlocked]</description>
+		<year>2000</year>
+		<manufacturer>Eighting / Raizing</manufacturer>
+		<rom name="gmde.03" size="524288" crc="968fcecd" sha1="82d6eb6488df48bc7b977fc900c24b29bd6573a9" region="maincpu" offset="0" flags="140"/>
+		<rom name="gmd.04" size="524288" crc="37485567" sha1="643c41fce6057bcaef0e0bedc62914c33d97eeaf" region="maincpu" offset="80000" flags="140"/>
+		<rom name="gmd.05" size="524288" crc="da269ffb" sha1="e99b04192030b6006cf67b563f40cea29c1b2e78" region="maincpu" offset="100000" flags="140"/>
+		<rom name="gmd.06" size="524288" crc="55b483c9" sha1="d47e077312f3c044d3647b79fa9e0581ccff5992" region="maincpu" offset="180000" flags="140"/>
+		<rom name="gmd.13m" size="4194304" crc="80dd19f0" sha1="0fd8b1e8d73cc83e6c34f0d94487938da2344f76" region="gfx" offset="0" flags="6100"/>
+		<rom name="gmd.15m" size="4194304" crc="dfd93a78" sha1="c343d5ddcc25bd0739491e7439d7c0d0a8881a04" region="gfx" offset="2" flags="6100"/>
+		<rom name="gmd.17m" size="4194304" crc="16356520" sha1="058713bef30c1b1d8b7dd0ceaaa57a3ab9751a70" region="gfx" offset="4" flags="6100"/>
+		<rom name="gmd.19m" size="4194304" crc="dfc33031" sha1="a1ceaeddc2a79d5b79f1b107cac2ef6a5e621e77" region="gfx" offset="6" flags="6100"/>
+		<rom name="gmd.01" size="131072" crc="3f9bc985" sha1="1616bbee82877b1052a07531066f5009a80706be" region="audiocpu" offset="0" flags="0"/>
+		<rom name="gmd.02" size="131072" crc="3fd39dde" sha1="6a6e3ef9baa430ee83ab2312aa0221bae4d73dbd" region="audiocpu" offset="28000" flags="0"/>
+		<rom name="gmd.11m" size="4194304" crc="06a65542" sha1="a1b3df70c90055a3cd59d0149fd18a74eff5bcc9" region="qsound" offset="0" flags="140"/>
+		<rom name="gmd.12m" size="4194304" crc="50bc7a31" sha1="7283569fc646c39f4c693f14e0ce7ff2ee49111a" region="qsound" offset="400000" flags="140"/>
+		<rom name="dimahoo.key" size="20" crc="7d6d2db9" sha1="b21f0e7b6c8952c53be43cd33044feeb7736cae6" region="key" offset="0" flags="0"/>
+		<device_ref name="m68000"/>
+		<device_ref name="timer"/>
+		<device_ref name="z80"/>
+		<device_ref name="93c46_16"/>
+		<device_ref name="screen"/>
+		<device_ref name="gfxdecode"/>
+		<device_ref name="palette"/>
+		<device_ref name="speaker"/>
+		<device_ref name="speaker"/>
+		<device_ref name="qsound_hle"/>
+		<chip type="cpu" tag="maincpu" name="Motorola MC68000" clock="16000000"/>
+		<chip type="cpu" tag="audiocpu" name="Zilog Z80" clock="8000000"/>
+		<chip type="audio" tag="lspeaker" name="Speaker"/>
+		<chip type="audio" tag="rspeaker" name="Speaker"/>
+		<chip type="audio" tag="qsound" name="QSound (HLE)" clock="60000000"/>
+		<display tag="screen" type="raster" rotate="270" width="384" height="224" refresh="59.637405" pixclock="8000000" htotal="512" hbend="64" hbstart="448" vtotal="262" vbend="16" vbstart="240" />
+		<sound channels="2"/>
+		<input players="2" coins="2" service="yes">
+			<control type="joy" player="1" buttons="3" ways="8"/>
+			<control type="joy" player="2" buttons="3" ways="8"/>
+		</input>
+		<port tag=":DIGITALVOL">
+		</port>
+		<port tag=":EEPROMOUT">
+		</port>
+		<port tag=":IN0">
+		</port>
+		<port tag=":IN1">
+		</port>
+		<port tag=":IN2">
+		</port>
+		<driver status="good" emulation="good" savestate="supported"/>
+	</machine>
+	<machine name="dimahoo_2" sourcefile="cps2.cpp" cloneof="dimahoo" romof="dimahoo">
+		<description>Dimahoo (USA 000121) [Unlocked]</description>
+		<year>2000</year>
+		<manufacturer>Eighting / Raizing</manufacturer>
+		<rom name="gmdu.03" size="524288" crc="43bcb15f" sha1="8cf758f9b3b416273e5b20e5d1c09c0a67029a01" region="maincpu" offset="0" flags="140"/>
+		<rom name="gmd.04" merge="gmd.04" size="524288" crc="37485567" sha1="643c41fce6057bcaef0e0bedc62914c33d97eeaf" region="maincpu" offset="80000" flags="140"/>
+		<rom name="gmd.05" merge="gmd.05" size="524288" crc="da269ffb" sha1="e99b04192030b6006cf67b563f40cea29c1b2e78" region="maincpu" offset="100000" flags="140"/>
+		<rom name="gmd.06" merge="gmd.06" size="524288" crc="55b483c9" sha1="d47e077312f3c044d3647b79fa9e0581ccff5992" region="maincpu" offset="180000" flags="140"/>
+		<rom name="gmd.13m" merge="gmd.13m" size="4194304" crc="80dd19f0" sha1="0fd8b1e8d73cc83e6c34f0d94487938da2344f76" region="gfx" offset="0" flags="6100"/>
+		<rom name="gmd.15m" merge="gmd.15m" size="4194304" crc="dfd93a78" sha1="c343d5ddcc25bd0739491e7439d7c0d0a8881a04" region="gfx" offset="2" flags="6100"/>
+		<rom name="gmd.17m" merge="gmd.17m" size="4194304" crc="16356520" sha1="058713bef30c1b1d8b7dd0ceaaa57a3ab9751a70" region="gfx" offset="4" flags="6100"/>
+		<rom name="gmd.19m" merge="gmd.19m" size="4194304" crc="dfc33031" sha1="a1ceaeddc2a79d5b79f1b107cac2ef6a5e621e77" region="gfx" offset="6" flags="6100"/>
+		<rom name="gmd.01" merge="gmd.01" size="131072" crc="3f9bc985" sha1="1616bbee82877b1052a07531066f5009a80706be" region="audiocpu" offset="0" flags="0"/>
+		<rom name="gmd.02" merge="gmd.02" size="131072" crc="3fd39dde" sha1="6a6e3ef9baa430ee83ab2312aa0221bae4d73dbd" region="audiocpu" offset="28000" flags="0"/>
+		<rom name="gmd.11m" merge="gmd.11m" size="4194304" crc="06a65542" sha1="a1b3df70c90055a3cd59d0149fd18a74eff5bcc9" region="qsound" offset="0" flags="140"/>
+		<rom name="gmd.12m" merge="gmd.12m" size="4194304" crc="50bc7a31" sha1="7283569fc646c39f4c693f14e0ce7ff2ee49111a" region="qsound" offset="400000" flags="140"/>
+		<rom name="dimahoou.key" size="20" crc="8254d7ab" sha1="023ffb14dd03548a23ad4ab07d16041a31c75691" region="key" offset="0" flags="0"/>
+		<device_ref name="m68000"/>
+		<device_ref name="timer"/>
+		<device_ref name="z80"/>
+		<device_ref name="93c46_16"/>
+		<device_ref name="screen"/>
+		<device_ref name="gfxdecode"/>
+		<device_ref name="palette"/>
+		<device_ref name="speaker"/>
+		<device_ref name="speaker"/>
+		<device_ref name="qsound_hle"/>
+		<chip type="cpu" tag="maincpu" name="Motorola MC68000" clock="16000000"/>
+		<chip type="cpu" tag="audiocpu" name="Zilog Z80" clock="8000000"/>
+		<chip type="audio" tag="lspeaker" name="Speaker"/>
+		<chip type="audio" tag="rspeaker" name="Speaker"/>
+		<chip type="audio" tag="qsound" name="QSound (HLE)" clock="60000000"/>
+		<display tag="screen" type="raster" rotate="270" width="384" height="224" refresh="59.637405" pixclock="8000000" htotal="512" hbend="64" hbstart="448" vtotal="262" vbend="16" vbstart="240" />
+		<sound channels="2"/>
+		<input players="2" coins="2" service="yes">
+			<control type="joy" player="1" buttons="3" ways="8"/>
+			<control type="joy" player="2" buttons="3" ways="8"/>
+		</input>
+		<port tag=":DIGITALVOL">
+		</port>
+		<port tag=":EEPROMOUT">
+		</port>
+		<port tag=":IN0">
+		</port>
+		<port tag=":IN1">
+		</port>
+		<port tag=":IN2">
+		</port>
+		<driver status="good" emulation="good" savestate="supported"/>
+	</machine>
+	<machine name="dimahoo_3" sourcefile="cps2.cpp" cloneof="dimahoo" romof="dimahoo">
+		<description>Great Mahou Daisakusen (Japan 000121) [Unlocked]</description>
+		<year>2000</year>
+		<manufacturer>Eighting / Raizing</manufacturer>
+		<rom name="gmdj.03" size="524288" crc="cd6979e3" sha1="b033408f49299eac376fc798c3429e5db97dd4fe" region="maincpu" offset="0" flags="140"/>
+		<rom name="gmd.04" merge="gmd.04" size="524288" crc="37485567" sha1="643c41fce6057bcaef0e0bedc62914c33d97eeaf" region="maincpu" offset="80000" flags="140"/>
+		<rom name="gmd.05" merge="gmd.05" size="524288" crc="da269ffb" sha1="e99b04192030b6006cf67b563f40cea29c1b2e78" region="maincpu" offset="100000" flags="140"/>
+		<rom name="gmd.06" merge="gmd.06" size="524288" crc="55b483c9" sha1="d47e077312f3c044d3647b79fa9e0581ccff5992" region="maincpu" offset="180000" flags="140"/>
+		<rom name="gmd.13m" merge="gmd.13m" size="4194304" crc="80dd19f0" sha1="0fd8b1e8d73cc83e6c34f0d94487938da2344f76" region="gfx" offset="0" flags="6100"/>
+		<rom name="gmd.15m" merge="gmd.15m" size="4194304" crc="dfd93a78" sha1="c343d5ddcc25bd0739491e7439d7c0d0a8881a04" region="gfx" offset="2" flags="6100"/>
+		<rom name="gmd.17m" merge="gmd.17m" size="4194304" crc="16356520" sha1="058713bef30c1b1d8b7dd0ceaaa57a3ab9751a70" region="gfx" offset="4" flags="6100"/>
+		<rom name="gmd.19m" merge="gmd.19m" size="4194304" crc="dfc33031" sha1="a1ceaeddc2a79d5b79f1b107cac2ef6a5e621e77" region="gfx" offset="6" flags="6100"/>
+		<rom name="gmd.01" merge="gmd.01" size="131072" crc="3f9bc985" sha1="1616bbee82877b1052a07531066f5009a80706be" region="audiocpu" offset="0" flags="0"/>
+		<rom name="gmd.02" merge="gmd.02" size="131072" crc="3fd39dde" sha1="6a6e3ef9baa430ee83ab2312aa0221bae4d73dbd" region="audiocpu" offset="28000" flags="0"/>
+		<rom name="gmd.11m" merge="gmd.11m" size="4194304" crc="06a65542" sha1="a1b3df70c90055a3cd59d0149fd18a74eff5bcc9" region="qsound" offset="0" flags="140"/>
+		<rom name="gmd.12m" merge="gmd.12m" size="4194304" crc="50bc7a31" sha1="7283569fc646c39f4c693f14e0ce7ff2ee49111a" region="qsound" offset="400000" flags="140"/>
+		<rom name="gmahou.key" size="20" crc="76a5e659" sha1="7babf076dee618ec9f88d8ca0eaef6af29c43a3b" region="key" offset="0" flags="0"/>
+		<device_ref name="m68000"/>
+		<device_ref name="timer"/>
+		<device_ref name="z80"/>
+		<device_ref name="93c46_16"/>
+		<device_ref name="screen"/>
+		<device_ref name="gfxdecode"/>
+		<device_ref name="palette"/>
+		<device_ref name="speaker"/>
+		<device_ref name="speaker"/>
+		<device_ref name="qsound_hle"/>
+		<chip type="cpu" tag="maincpu" name="Motorola MC68000" clock="16000000"/>
+		<chip type="cpu" tag="audiocpu" name="Zilog Z80" clock="8000000"/>
+		<chip type="audio" tag="lspeaker" name="Speaker"/>
+		<chip type="audio" tag="rspeaker" name="Speaker"/>
+		<chip type="audio" tag="qsound" name="QSound (HLE)" clock="60000000"/>
+		<display tag="screen" type="raster" rotate="270" width="384" height="224" refresh="59.637405" pixclock="8000000" htotal="512" hbend="64" hbstart="448" vtotal="262" vbend="16" vbstart="240" />
+		<sound channels="2"/>
+		<input players="2" coins="2" service="yes">
+			<control type="joy" player="1" buttons="3" ways="8"/>
+			<control type="joy" player="2" buttons="3" ways="8"/>
+		</input>
+		<port tag=":DIGITALVOL">
+		</port>
+		<port tag=":EEPROMOUT">
+		</port>
+		<port tag=":IN0">
+		</port>
+		<port tag=":IN1">
+		</port>
+		<port tag=":IN2">
+		</port>
+		<driver status="good" emulation="good" savestate="supported"/>
+	</machine>
+</mame>

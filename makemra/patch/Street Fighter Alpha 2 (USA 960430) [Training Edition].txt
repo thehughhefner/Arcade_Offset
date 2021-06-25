@@ -1,0 +1,4 @@
+        <patch offset="0x00005892">e1 92 71 c1</patch>
+        <patch offset="0x00010b66">cd c1 81 01</patch>
+        <patch offset="0x00026564">b8 76 45 d7</patch>
+        <patch offset="0x00026822">21 31 b7 9a</patch>

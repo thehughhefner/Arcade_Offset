@@ -1,4 +1,5 @@
 #!/bin/bash
+#
 
 echo 
 
@@ -8,11 +9,7 @@ echo
 
 echo "Press ctrl-c to exit or any key to continue..."
 
-echo 
-
 read -n 1
-
-echo 
 
 echo "Arcade Offset Updater"
 
@@ -29,6 +26,8 @@ mkdir -p "/media/fat/_Arcade/_Arcade Offset" &&
 cd "/media/fat/_Arcade/_Arcade Offset" &&
 
 curl -s --insecure https://raw.githubusercontent.com/atrac17/Arcade_Offset/main/release/misterfpga_arcade_offset-20200625.txz | tar -Jxf - --no-same-owner --no-same-permissions &&
+
+echo 
 
 echo "Update Complete"
 

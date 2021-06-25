@@ -16,7 +16,7 @@ There are custom **`.xml`** files generated to export these enchancements to **`
 
 Currently, the **fourth button** has been eliminated in [**jotego's jtcps15 core**](https://github.com/jotego/jtbin/tree/master/mister/cps15) to fix an issue with [**Muscle Bomber Duo**](https://github.com/jotego/jtcps1/issues/99) as no officially released titles utilize more than three buttons on the hardware. 
 
-Please use the core linked below separately if you wish to have full **6 button support** for ***Street Fighter Zero (CPS Changer 1.5, Japan 201218)***. If not, you will loose the input for `lk`/`B4`.
+Please use the core linked below separately if you wish to have full **6 button support** for ***Street Fighter Zero (CPS Changer 1.5, Japan 201218)***. If not, you will lose the input for `lk`/`B4`.
 
 **Naming Schema:**
 

@@ -2,6 +2,18 @@
 
 echo 
 
+echo "*** WARNING: this program will completely erase and replace your Arcade Offset directory! Please ensure to back up your customized files."
+
+echo 
+
+echo "Press ctrl-c to exit or any key to continue..."
+
+echo 
+
+read -n 1
+
+echo 
+
 echo "Arcade Offset Updater"
 
 echo 

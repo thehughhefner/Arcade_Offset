@@ -14,7 +14,11 @@ There are custom **.xml** files generated to export these enchancements to **.mr
 
 Below is a video tutorial on how to install and run [arcade_offset_update.sh](https://github.com/atrac17/Arcade_Offset/blob/main/arcade_offset_update.sh). It can be run from **SSH** or on you **MiSTer**.
 
-Just simply download the script by clicking `code` and choose `zip` file. Extract the file named `arcade_offset_update.sh` and place it in `media/fat/Scripts/`. Uncollapse the video below to view the tutorial.
+Just simply download the script by clicking `code` and choose `zip` file. Extract the file named `arcade_offset_update.sh` and place it in `media/fat/Scripts/`.
+
+![1](https://user-images.githubusercontent.com/32810066/123520704-e79dc800-d67f-11eb-97c2-86bcd0ab6b87.png)
+
+Uncollapse the video below to view the tutorial.
 
 <details>
 <summary>

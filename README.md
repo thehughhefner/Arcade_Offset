@@ -8,7 +8,7 @@ These patches utilize encrypted roms from mame 0.229 or higher.  They should wor
 
 They include **unlocked characters, modes, enchancements, trainers, and other features** available in the encrypted romsets. The primary usage is to no longer input a **code** to access hidden characters. Some files may be found in **HBMame**, although that is not the original source. The readme files for each title show the source of the patch and the author. If none is notated, then the patch has sourced from me.
 
-There are custom **.xml** files generated to export these enchancements to **.mra** files when generated. They are located in the **makemra/xml** directory.
+There are custom **.xml** files generated to export these enchancements to **.mra** files when generated. They are located in the **rom/xml** directory.
 
 ## Arcade Offset Update (Download Script)
 

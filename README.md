@@ -6,29 +6,65 @@ This repository will include encrypted patches for titles available on [**jotego
 
 These patches utilize encrypted roms from mame 0.229 or higher.  They should work with previous mame sets if no changes were made to the merged rom. The intent of these patched mra files is to alleviate the need for additional roms in **`games/mame`** or **`games/hbmame`** and patch the merged rom on the fly.
 
-They include **unlocked characters, modes, enchancements, trainers, and other features** available in the encrypted romsets. The primary usage is to no longer input a **`code`** to access hidden characters. Some files may be found in **`HBMame`**, although that is not the original source. The readme files for each title show the source of the patch and the author. If none is notated, then the patch has sourced from me.
+They include **unlocked characters, modes, enchancements, trainers, and other features** available in the encrypted romsets. The primary usage is to no longer input a **code** to access hidden characters. Some files may be found in **HBMame**, although that is not the original source. The readme files for each title show the source of the patch and the author. If none is notated, then the patch has sourced from me.
 
-There are custom **`.xml`** files generated to export these enchancements to **`.mra`** files when generated. They are located in the **`makemra/xml`** directory.
+There are custom **.xml** files generated to export these enchancements to **.mra** files when generated. They are located in the **makemra/xml** directory.
 
-## Current Patched Titles
+## Arcade Offset Update (Download Script)
 
-**Compatibility with `jtcps15` as of 20210624:**
+Below is a video tutorial on how to install and run [arcade_offset_update.sh](https://github.com/atrac17/Arcade_Offset/blob/main/arcade_offset_update.sh). It can be run from **SSH** or media/fat/Scripts on you **MiSTer**.
+
+Just simply download the script from the link above and place it in `media/fat/Scripts/`. Uncollapse the video below to view the tutorial.
+
+<details>
+<summary>
+<b>Arcade Offset Update Video Tutorial</b>
+</summary>
+<p>https://user-images.githubusercontent.com/32810066/123512934-2e77c780-d658-11eb-8707-8db9f5bfc89c.mp4</p>
+</details>
+
+## Compatibility Notes
+
+<details>
+
+<summary>Compatibility with <b>jtcps15</b> as of 20210624:</summary>
 
 Currently, the **fourth button** has been eliminated in [**jotego's jtcps15 core**](https://github.com/jotego/jtbin/tree/master/mister/cps15) to fix an issue with [**Muscle Bomber Duo**](https://github.com/jotego/jtcps1/issues/99) as no officially released titles utilize more than three buttons on the hardware. 
 
-Please use the core linked below separately if you wish to have full **6 button support** for ***Street Fighter Zero (CPS Changer 1.5, Japan 201218)***. If not, you will lose the input for `lk`/`B4`.
+Please use the core linked below separately in **Current Titles** if you wish to have full **6 button support** for ***Street Fighter Zero (CPS Changer 1.5, Japan 201218)***. If not, you will lose the input for `lk`/`B4`.
 
-**Naming Schema:**
+This will be addressed in the future.
+
+</details>
+
+## Current Patched Titles
+
+<details>
+
+<summary>Naming Schema Template:</summary>
 
 | **No [ ]**| **[TE]**| **[Naming Schema]**|
 |---------------|-------------|-------------|
-| ***[Unlocked]*** | ***[Training Edition]***  | ***[Onslaught Edition], [Aesthetic Mod], [v1], Etc.*** | 
+| ***[Unlocked]*** | ***[Training Edition]***  | ***[Onslaught Edition], [Aesthetic Mod], [v1], Etc.*** |
 
-**Current Titles:**
+</details>
+
+<details>
+
+<summary><b>Current Titles for CP System 'Dash:</b></summary>
 
 | Title         | Core        | Information                  | Date Available: |
 |---------------|-------------|------------------------------|-----------------|
 [**Street Fighter Zero (CPS Changer 1.5, Japan 201218)**](https://github.com/atrac17/Arcade_Offset/blob/main/release/_Arcade%20Offset/_CP%20System%20'Dash/Street%20Fighter%20Zero%20(CPS%20Changer%201.5%2C%20Japan%20201218).mra) | [**JTCPS15**](https://github.com/jotego/jtbin/blob/master/mister/cps15/releases/jtcps15_20210604.rbf) | [**View Readme**](https://github.com/atrac17/Arcade_Offset/blob/main/readme/CP%20System%20'Dash/Street%20Fighter%20Zero%20(CPS%20Changer%201.5%2C%20Japan%20201218).md) | 20210624 |
+
+</details>
+
+<details>
+
+<summary><b>Current Titles for CP System II:</b></summary>
+
+| Title         | Core        | Information                  | Date Available: |
+|---------------|-------------|------------------------------|-----------------|
 [**Dimahoo (Euro 000121)**](https://github.com/atrac17/Arcade_Offset/blob/main/release/_Arcade%20Offset/_CP%20System%20II/_Unlocked/Dimahoo%20(Euro%20000121)%20%5BUnlocked%5D.mra) | JTCPS2 | [**View Readme**](https://github.com/atrac17/Arcade_Offset/blob/main/readme/CP%20System%20II/Dimahoo%20(Euro%20000121)%20%5BUnlocked%5D.md) | 20210624 |
 [**Dimahoo (USA 000121)**](https://github.com/atrac17/Arcade_Offset/blob/main/release/_Arcade%20Offset/_CP%20System%20II/_Unlocked/Dimahoo%20%28USA%20000121%29%20%5BUnlocked%5D.mra) | JTCPS2 | [**View Readme**](https://github.com/atrac17/Arcade_Offset/blob/main/readme/CP%20System%20II/Dimahoo%20(USA%20000121)%20%5BUnlocked%5D.md) | 20210624 |
 [**Great Mahou Daisakusen (Japan 000121)**](https://github.com/atrac17/Arcade_Offset/blob/main/release/_Arcade%20Offset/_CP%20System%20II/_Unlocked/Great%20Mahou%20Daisakusen%20%28Japan%20000121%29%20%5BUnlocked%5D.mra) | JTCPS2 | [**View Readme**](https://github.com/atrac17/Arcade_Offset/blob/main/readme/CP%20System%20II/Great%20Mahou%20Daisakusen%20(Japan%20000121)%20%5BUnlocked%5D.md) | 20210624 |
@@ -64,12 +100,17 @@ Please use the core linked below separately if you wish to have full **6 button 
 [**X-Men Children of the Atom (Japan 941219)**](https://github.com/atrac17/Arcade_Offset/blob/main/release/_Arcade%20Offset/_CP%20System%20II/_Unlocked/X-Men%20Children%20of%20the%20Atom%20(Japan%20941219)%20%5BUnlocked%5D.mra) | JTCPS2 | [**View Readme**](https://github.com/atrac17/Arcade_Offset/blob/main/readme/CP%20System%20II/X-Men%20Children%20of%20the%20Atom%20(Japan%20941219)%20%5BUnlocked%5D.md) | 20210624 |
 [**X-Men Children of the Atom (USA 941219)**](https://github.com/atrac17/Arcade_Offset/blob/main/release/_Arcade%20Offset/_CP%20System%20II/_Unlocked/X-Men%20Children%20of%20the%20Atom%20(USA%20941219)%20%5BUnlocked%5D.mra) | JTCPS2 | [**View Readme**](https://github.com/atrac17/Arcade_Offset/blob/main/readme/CP%20System%20II/X-Men%20Children%20of%20the%20Atom%20(USA%20941219)%20%5BUnlocked%5D.md) | 20210624 |
 
+</details>
 
 ## Patched MRA Format
 
-Most of this should be self explanatory, this is the provided layout used for **`jtcps2`**. Patches are applied to the loaded roms from **`rom index="0"`**. Additional information may be provided from **`soft dip`** settings in the eeprom/nvram file. The hex is taken from **`soft dip`** settings and applied to **`rom index="02"`**. The  **`rom index`** usage will vary from core to core dependent upon the author.
+This is the provided layout used for **`jtcps2`**. Patches are applied to the loaded roms from **`rom index="0"`**. Additional information may be provided from **soft dip** settings in the eeprom/nvram file. The hex is taken from **soft dip** settings and applied to **`rom index="02"`**. The  **`rom index`** usage will vary from core to core dependent upon the author.
 
 As these are generated from a tool chain, they do not mirror the example shown at [**MiSTer-devel/Main_MiSTer #MRA Format**](https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms-and-MRA-files#mra-format).
+
+<details>
+        <summary><b>Patched MRA Template</b></summary>
+<p>
 
 ```xml
         <misterromdescription>
@@ -109,3 +150,12 @@ As these are generated from a tool chain, they do not mirror the example shown a
             <buttons names="B1,B2,B3,B4,B5,B6,Start,Coin,Core Credits" default="Y,X,B,A,L,R,Select,Start,-" count="6"/>
         </misterromdescription>
 ```
+
+</p>
+</details> 
+
+## Support
+
+Please consider showing support for this and future projects at [Patreon](https://www.patreon.com/atrac17). While it isn't necessary, it's greatly appreciated.
+
+![123269746-440cb600-d4cd-11eb-9e11-90ed7fc951d7](https://user-images.githubusercontent.com/32810066/123511968-b529a600-d652-11eb-9cd5-ca45d16e81a5.png)

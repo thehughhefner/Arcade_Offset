@@ -13,8 +13,8 @@ echo -e "${PRP}        _ / /   / ___ \| | | (_| (_| | (_| |  __/  | |_| |  _|  _
 echo -e "${PRP}       (_)_/___/_/   \_\_|  \___\__,_|\__,_|\___|   \___/|_| |_| |___/\___|\__|"
 echo -e "${PRP}          |_____|"
 echo 
-echo -e "${RED}** WARNING: ** ${NC}This script will ${RED} erase ${NC}and install the ${RED}/_Arcade Offset directory${NC} again.
-${NC}Ensure to back up your mra files you've ${RED}modified${NC} in this ${RED}directory path${NC} before running."
+echo -e "${RED}** WARNING: ** ${NC}This script will ${RED}erase ${NC}and install the ${RED}/_Arcade Offset directory${NC} again.
+${NC}Ensure to back up your mra files you've ${RED}modified ${NC}in this ${RED}directory path ${NC}before running."
 echo 
 echo -e "${NC}Press ctrl-c to exit or any key to continue..."
 read -n 1

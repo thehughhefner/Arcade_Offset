@@ -1,4 +1,5 @@
-![capcom](https://user-images.githubusercontent.com/32810066/123269746-440cb600-d4cd-11eb-9e11-90ed7fc951d7.png)
+![atracao](https://user-images.githubusercontent.com/32810066/124553684-0714bd80-de03-11eb-9f09-d34e61373405.png)
+
 
 ## Arcade Offset (Patched MRA Files)
 

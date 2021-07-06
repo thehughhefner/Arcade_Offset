@@ -15,18 +15,20 @@ There are custom **.xml** files generated to export these enchancements to **.mr
 
 Below is a video tutorial on how to install and run [arcade_offset_update.sh](https://github.com/atrac17/Arcade_Offset/blob/main/arcade_offset_update.sh). It can be run from **SSH** or on you **MiSTer**.
 
-Just simply download the script by clicking `code` and choose `zip` file. Extract the file named `arcade_offset_update.sh` and place it in `media/fat/Scripts/`. You can also download the scipt [here](https://drive.google.com/file/d/1Hhsf-BD1aiGi2LsCulbkOaQYdRR6ywvd/view?usp=sharing).
+Just simply download the script by clicking `code` and choose `zip` file. Extract the file named `arcade_offset_update.sh` and place it in `media/fat/Scripts/`.
+
+You can also download the scipt **[here](https://drive.google.com/file/d/1Hhsf-BD1aiGi2LsCulbkOaQYdRR6ywvd/view?usp=sharing)**. If you are unable to run **secure** scripts, please us the following script from **[here](https://drive.google.com/file/d/105bayJiLCcWuSHFkvkzZHO9mMfSBL6zX/view?usp=sharing)**.
 
 <details>
 <summary>
-<b>Script Installation</b>
+<b>Script Download</b>
 </summary>
         
 ![Picture](https://user-images.githubusercontent.com/32810066/123520704-e79dc800-d67f-11eb-97c2-86bcd0ab6b87.png)
         
 </details>
 
-Uncollapse the video below to view the tutorial.
+Uncollapse the video below to view the tutorial on how to run the script(s). Also, I've included an example of the error if you are encountering issues with --cacert.
 
 <details>
 <summary>
@@ -37,6 +39,10 @@ Uncollapse the video below to view the tutorial.
 <b>Arcade Offset Update Video Tutorial 20210706</b>
 </summary>
 <p>https://user-images.githubusercontent.com/32810066/124557190-34fc0100-de07-11eb-8fe0-260505dca27d.mp4</p>
+<summary>
+<b>--cacert errors 20210706</b>
+</summary>
+<p>https://user-images.githubusercontent.com/32810066/124593085-37bd1d00-de2c-11eb-83c4-688ed6eff265.mp4</p>
 </details>
 
 ## Compatibility Notes

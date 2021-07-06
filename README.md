@@ -18,7 +18,9 @@ Below is a video tutorial on how to install and run [arcade_offset_update.sh](ht
 Just simply download the script by clicking `code` and choose `zip` file. Extract the file named `arcade_offset_update.sh` and place it in `media/fat/Scripts/`. You can also download the scipt [here](https://drive.google.com/file/d/1Hhsf-BD1aiGi2LsCulbkOaQYdRR6ywvd/view?usp=sharing).
 
 <details>
-<summary>Script Installation</summary>
+<summary>
+<b>Script Installation</b>
+</summary>
         
 ![Picture](https://user-images.githubusercontent.com/32810066/123520704-e79dc800-d67f-11eb-97c2-86bcd0ab6b87.png)
         

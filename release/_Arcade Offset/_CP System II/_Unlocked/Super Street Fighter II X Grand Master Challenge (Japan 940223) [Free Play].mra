@@ -88,9 +88,6 @@
         <!-- Total 0x17C2014 bytes - 24328 kBytes -->
         <patch offset="0x0cec58">d2 4c</patch>
     </rom>
-    <rom index="16" zip="beta.zip" md5="None">
-        <part name="beta.bin"/>
-    </rom>
     <rom index="1">
         <part>00</part>
     </rom>

@@ -103,9 +103,6 @@
         <patch offset="0x0d6ac0">bd 3b 65 58 25 f4 16 e1 44 3d cf 73 31 71 17 b4 6f ff 6f 69 04 f3 cf 60 32 02 db 80 cb 32 c2 cb 8f 38 b6 6e 36 65 25 b8 aa 61 9d 93 d1 79 89 03 8c f1 0d e2 d4 15 4d 50 7f 36 8b 21 42 13 cc 8d 1b 5b f6 43 46 5a fb a1 22 f5 72 8d 0d 45 e5 22</patch>
         <patch offset="0x0d6ca0">85 0e 43 ec c8 1f 63 af cb 6a 61 78 78 da 5b 73 45 b2 fc 9a b2 d5 91 e5 63 a9 70 3b f1 07 6b 2a e4 1a 09 8e 87 cf b1 52 a8 14 17 dc 7b 79 ef a1 42 75 2e f2 46 96 38 1a 64 b8 43 c2 61 b1 df 4f d5 45 68 2f</patch>
     </rom>
-    <rom index="16" zip="beta.zip" md5="None">
-        <part name="beta.bin"/>
-    </rom>
     <rom index="1">
         <part>00</part>
     </rom>

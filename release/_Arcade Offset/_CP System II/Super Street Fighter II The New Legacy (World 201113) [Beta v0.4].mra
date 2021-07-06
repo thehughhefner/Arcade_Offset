@@ -20757,9 +20757,6 @@
         <patch offset="0x015c3a60">40 40</patch>
         <patch offset="0x015c49b4">08 18</patch>
     </rom>
-    <rom index="16" zip="beta.zip" md5="None">
-        <part name="beta.bin"/>
-    </rom>
     <rom index="1">
         <part>00</part>
     </rom>

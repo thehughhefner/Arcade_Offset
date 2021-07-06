@@ -88,9 +88,6 @@
         <patch offset="0x046ea0">61 0e ca fd 31 b6</patch>
         <patch offset="0x100010">82 fd c5 4a 5e a0 e2 a8 7e d1 7d 45 81 fa 43 01 4d 15 d6 65 b2 dc 94 0b 3d 90 07 81 85 04 b9 d5 20 96 99 c6 5f 73 89 30</patch>
     </rom>
-    <rom index="16" zip="beta.zip" md5="None">
-        <part name="beta.bin"/>
-    </rom>
     <rom index="1">
         <part>00</part>
     </rom>

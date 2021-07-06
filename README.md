@@ -35,7 +35,7 @@ Uncollapse the video below to view the tutorial.
 
 Currently, the **fourth button** has been eliminated in [**jotego's jtcps15 core**](https://github.com/jotego/jtbin/tree/master/mister/cps15) to fix an issue with [**Muscle Bomber Duo**](https://github.com/jotego/jtcps1/issues/99) as no officially released titles utilize more than three buttons on the hardware. 
 
-Please use the core linked below separately in **Current Titles** if you wish to have full **6 button support** for ***Street Fighter Zero (CPS Changer 1.5, Japan 201218)***. If not, you will lose the input for `lk`/`B4`.
+Please use the core linked below separately in **Current Titles** if you wish to have full **6 button support** for ***Street Fighter Zero (CPS Changer, Japan 201218)***. If not, you will lose the input for `lk`/`B4`.
 
 This will be addressed in the future.
 
@@ -55,11 +55,22 @@ This will be addressed in the future.
 
 <details>
 
-<summary><b>Current Titles for CP System 'Dash:</b></summary>
+<summary><b>Current Titles for CP System:</b></summary>
 
 | Title         | Core        | Information                  | Date Available: |
 |---------------|-------------|------------------------------|-----------------|
-[**Street Fighter Zero (CPS Changer 1.5, Japan 201218)**](https://github.com/atrac17/Arcade_Offset/blob/main/release/_Arcade%20Offset/_CP%20System%20'Dash/Street%20Fighter%20Zero%20(CPS%20Changer%201.5%2C%20Japan%20201218).mra) | [**JTCPS15**](https://github.com/jotego/jtbin/blob/master/mister/cps15/releases/jtcps15_20210604.rbf) | [**View Readme**](https://github.com/atrac17/Arcade_Offset/blob/main/readme/CP%20System%20'Dash/Street%20Fighter%20Zero%20(CPS%20Changer%201.5%2C%20Japan%20201218).md) | 20210624 |
+[**Street Smart Final Fight (Japan) [Hack]**]() | **JTCPS1** | [**View Readme**]().md) | 20210706 |
+
+</details>
+
+<details>
+
+<summary><b>Current Titles for CP System Changer:</b></summary>
+
+| Title         | Core        | Information                  | Date Available: |
+|---------------|-------------|------------------------------|-----------------|
+[**Street Fighter Zero (CPS Changer, Japan 201218)**](https://github.com/atrac17/Arcade_Offset/blob/main/release/_Arcade%20Offset/_CP%20System%20Changer/Street%20Fighter%20Zero%20(CPS%20Changer%2C%20Japan%20201218).mra) | [**JTCPS15**](https://github.com/jotego/jtbin/blob/master/mister/cps15/releases/jtcps15_20210604.rbf) | [**View Readme**](https://github.com/atrac17/Arcade_Offset/blob/main/readme/CP%20System%20Changer/Street%20Fighter%20Zero%20(CPS%20Changer%2C%20Japan%20201218).md) | 20210624 |
+[**Tenchi wo Kurau II: Sekiheki no Tatakai (CPS Changer, Japan 921031)**]() | **JTCPS15** | [**View Readme**]().md) | 20210706 |
 
 </details>
 

@@ -1,0 +1,169 @@
+<mame>
+	<machine name="ffightjh" sourcefile="cps1.cpp" cloneof="ffight" romof="ffight">
+		<description>Street Smart: Final Fight (Japan) [Hack]</description>
+		<year>1989</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="ff_23.8f" size="524288" crc="ae3dda7f" sha1="5f08ce1e6b6b0d45994d3354d59ef79f489c7ad7" region="maincpu" offset="0" flags="140"/>
+		<rom name="ff_22.7f" size="524288" crc="b2d5a3aa" sha1="b60f7480d3d3ceebad4c21025394bacc154d7042" region="maincpu" offset="80000" flags="140"/>
+		<rom name="ff_1.3a" size="524288" crc="969d18e2" sha1="7a30b7434e34ec98838a9ab8d953b2ef467d562e" region="gfx" offset="0" flags="6100"/>
+		<rom name="ff_2.4a" size="524288" crc="02b59f99" sha1="c1cb2bbf95c2006baad58b0a5a7278f1a8999901" region="gfx" offset="2" flags="6100"/>
+		<rom name="ff_3.5a" size="524288" crc="01d507ae" sha1="d7813daa5bd74bebdbbea578acb20ad3c8816997" region="gfx" offset="4" flags="6100"/>
+		<rom name="ff_4.6a" size="524288" crc="f7c4ceb0" sha1="3e9cf6379f06c5a736b4a0aadb7fbda914b91190" region="gfx" offset="6" flags="6100"/>
+		<rom name="ff_9.12a" merge="ff_09.12b" size="65536" crc="b8367eb5" sha1="ec3db29fdd6200e9a8f4f8073a7e34aef731354f" region="audiocpu" offset="0" flags="0"/>
+		<rom name="ff_18.11c" merge="ff_18.11c" size="131072" crc="375c66e7" sha1="36189e23209ce4ae5d9cbabd1574540d0591e7b3" region="oki" offset="0" flags="0"/>
+		<rom name="ff_19.12c" merge="ff_19.12c" size="131072" crc="1ef137f9" sha1="974b5e72aa28b87ebfa7438efbdfeda769dedf5e" region="oki" offset="20000" flags="0"/>
+		<rom name="buf1" merge="buf1" size="279" crc="eb122de7" sha1="b26b5bfe258e3e184f069719f9fd008d6b8f6b9b" region="aboardplds" offset="0" flags="0"/>
+		<rom name="ioa1" merge="ioa1" size="279" crc="59c7ee3b" sha1="fbb887c5b4f5cb8df77cec710eaac2985bc482a6" region="aboardplds" offset="0" flags="0"/>
+		<rom name="prg1" merge="prg1" size="279" crc="f1129744" sha1="a5300f301c1a08a7da768f0773fa0fe3f683b237" region="aboardplds" offset="0" flags="0"/>
+		<rom name="rom1" merge="rom1" size="279" crc="41dc73b9" sha1="7d4c9f1693c821fbf84e32dd6ef62ddf14967845" region="aboardplds" offset="0" flags="0"/>
+		<rom name="sou1" merge="sou1" size="279" crc="84f4b2fe" sha1="dcc9e86cc36316fe42eace02d6df75d08bc8bb6d" region="aboardplds" offset="0" flags="0"/>
+		<rom name="gal16v8a-15lp.1a" size="279" status="nodump" region="bboardplds" offset="0" flags="0"/>
+		<rom name="iob1.12d" merge="iob1.11e" size="279" crc="3abc0700" sha1="973043aa46ec6d5d1db20dc9d5937005a0f9f6ae" region="bboardplds" offset="0" flags="0"/>
+		<rom name="bprg1.11d" size="279" crc="31793da7" sha1="400fa7ac517421c978c1ee7773c30b9ed0c5d3f3" region="bboardplds" offset="0" flags="0"/>
+		<rom name="ioc1.ic1" size="260" crc="a399772d" sha1="55471189db573dd61e3087d12c55564291672c77" region="cboardplds" offset="0" flags="0"/>
+		<device_ref name="m68000"/>
+		<device_ref name="z80"/>
+		<device_ref name="screen"/>
+		<device_ref name="gfxdecode"/>
+		<device_ref name="palette"/>
+		<device_ref name="speaker"/>
+		<device_ref name="generic_latch_8"/>
+		<device_ref name="generic_latch_8"/>
+		<device_ref name="ym2151"/>
+		<device_ref name="okim6295"/>
+		<chip type="cpu" tag="maincpu" name="Motorola MC68000" clock="10000000"/>
+		<chip type="cpu" tag="audiocpu" name="Zilog Z80" clock="3579545"/>
+		<chip type="audio" tag="mono" name="Speaker"/>
+		<chip type="audio" tag="2151" name="YM2151 OPM" clock="3579545"/>
+		<chip type="audio" tag="oki" name="OKI MSM6295 ADPCM" clock="1000000"/>
+		<display tag="screen" type="raster" rotate="0" width="384" height="224" refresh="59.637405" pixclock="8000000" htotal="512" hbend="64" hbstart="448" vtotal="262" vbend="16" vbstart="240" />
+		<sound channels="1"/>
+		<input players="2" coins="2">
+			<control type="joy" player="1" buttons="3" ways="8"/>
+			<control type="joy" player="2" buttons="3" ways="8"/>
+		</input>
+		<dipswitch name="Coin A" tag="DSWA" mask="7">
+			<diplocation name="SW(A)" number="1"/>
+			<diplocation name="SW(A)" number="2"/>
+			<diplocation name="SW(A)" number="3"/>
+			<dipvalue name="4 Coins/1 Credit" value="0"/>
+			<dipvalue name="3 Coins/1 Credit" value="1"/>
+			<dipvalue name="2 Coins/1 Credit" value="2"/>
+			<dipvalue name="1 Coin/1 Credit" value="7" default="yes"/>
+			<dipvalue name="1 Coin/2 Credits" value="6"/>
+			<dipvalue name="1 Coin/3 Credits" value="5"/>
+			<dipvalue name="1 Coin/4 Credits" value="4"/>
+			<dipvalue name="1 Coin/6 Credits" value="3"/>
+		</dipswitch>
+		<dipswitch name="Coin B" tag="DSWA" mask="56">
+			<diplocation name="SW(A)" number="4"/>
+			<diplocation name="SW(A)" number="5"/>
+			<diplocation name="SW(A)" number="6"/>
+			<dipvalue name="4 Coins/1 Credit" value="0"/>
+			<dipvalue name="3 Coins/1 Credit" value="8"/>
+			<dipvalue name="2 Coins/1 Credit" value="16"/>
+			<dipvalue name="1 Coin/1 Credit" value="56" default="yes"/>
+			<dipvalue name="1 Coin/2 Credits" value="48"/>
+			<dipvalue name="1 Coin/3 Credits" value="40"/>
+			<dipvalue name="1 Coin/4 Credits" value="32"/>
+			<dipvalue name="1 Coin/6 Credits" value="24"/>
+		</dipswitch>
+		<dipswitch name="2 to Start, 1 to Cont." tag="DSWA" mask="64">
+			<diplocation name="SW(A)" number="7"/>
+			<dipvalue name="Off" value="64" default="yes"/>
+			<dipvalue name="On" value="0"/>
+		</dipswitch>
+		<dipswitch name="Unused" tag="DSWA" mask="128">
+			<diplocation name="SW(A)" number="8"/>
+			<dipvalue name="Off" value="128" default="yes"/>
+			<dipvalue name="On" value="0"/>
+		</dipswitch>
+		<dipswitch name="Difficulty Level 1" tag="DSWB" mask="7">
+			<diplocation name="SW(B)" number="1"/>
+			<diplocation name="SW(B)" number="2"/>
+			<diplocation name="SW(B)" number="3"/>
+			<dipvalue name="0" value="7"/>
+			<dipvalue name="1" value="6"/>
+			<dipvalue name="2" value="5"/>
+			<dipvalue name="3" value="4" default="yes"/>
+			<dipvalue name="4" value="3"/>
+			<dipvalue name="5" value="2"/>
+			<dipvalue name="6" value="1"/>
+			<dipvalue name="7" value="0"/>
+		</dipswitch>
+		<dipswitch name="Difficulty Level 2" tag="DSWB" mask="24">
+			<diplocation name="SW(B)" number="4"/>
+			<diplocation name="SW(B)" number="5"/>
+			<dipvalue name="0" value="24"/>
+			<dipvalue name="1" value="16" default="yes"/>
+			<dipvalue name="2" value="8"/>
+			<dipvalue name="3" value="0"/>
+		</dipswitch>
+		<dipswitch name="Extend" tag="DSWB" mask="96">
+			<diplocation name="SW(B)" number="6"/>
+			<diplocation name="SW(B)" number="7"/>
+			<dipvalue name="100k" value="96" default="yes"/>
+			<dipvalue name="200k" value="64"/>
+			<dipvalue name="100k 200k" value="32"/>
+			<dipvalue name="None" value="0"/>
+		</dipswitch>
+		<dipswitch name="Unused" tag="DSWB" mask="128">
+			<diplocation name="SW(B)" number="8"/>
+			<dipvalue name="Off" value="128" default="yes"/>
+			<dipvalue name="On" value="0"/>
+		</dipswitch>
+		<dipswitch name="Lives" tag="DSWC" mask="3">
+			<diplocation name="SW(C)" number="1"/>
+			<diplocation name="SW(C)" number="2"/>
+			<dipvalue name="1" value="0"/>
+			<dipvalue name="2" value="3" default="yes"/>
+			<dipvalue name="3" value="2"/>
+			<dipvalue name="4" value="1"/>
+		</dipswitch>
+		<dipswitch name="Free Play" tag="DSWC" mask="4">
+			<diplocation name="SW(C)" number="3"/>
+			<dipvalue name="Off" value="4" default="yes"/>
+			<dipvalue name="On" value="0"/>
+		</dipswitch>
+		<dipswitch name="Freeze" tag="DSWC" mask="8">
+			<diplocation name="SW(C)" number="4"/>
+			<dipvalue name="Off" value="8" default="yes"/>
+			<dipvalue name="On" value="0"/>
+		</dipswitch>
+		<dipswitch name="Flip Screen" tag="DSWC" mask="16">
+			<diplocation name="SW(C)" number="5"/>
+			<dipvalue name="Off" value="16" default="yes"/>
+			<dipvalue name="On" value="0"/>
+		</dipswitch>
+		<dipswitch name="Demo Sounds" tag="DSWC" mask="32">
+			<diplocation name="SW(C)" number="6"/>
+			<dipvalue name="Off" value="32"/>
+			<dipvalue name="On" value="0" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Allow Continue" tag="DSWC" mask="64">
+			<diplocation name="SW(C)" number="7"/>
+			<dipvalue name="No" value="64"/>
+			<dipvalue name="Yes" value="0" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Game Mode" tag="DSWC" mask="128">
+			<diplocation name="SW(C)" number="8"/>
+			<dipvalue name="Game" value="128" default="yes"/>
+			<dipvalue name="Test" value="0"/>
+		</dipswitch>
+		<dipswitch name="Service Mode" tag="IN0" mask="64">
+			<dipvalue name="Off" value="64" default="yes"/>
+			<dipvalue name="On" value="0"/>
+		</dipswitch>
+		<port tag=":DSWA">
+		</port>
+		<port tag=":DSWB">
+		</port>
+		<port tag=":DSWC">
+		</port>
+		<port tag=":IN0">
+		</port>
+		<port tag=":IN1">
+		</port>
+		<driver status="good" emulation="good" savestate="supported"/>
+	</machine>
+</mame>

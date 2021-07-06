@@ -73,9 +73,6 @@
         <!-- Total 0x1A42014 bytes - 26888 kBytes -->
         <patch offset="0x03d37e">e8 87</patch>
     </rom>
-    <rom index="16" zip="beta.zip" md5="None">
-        <part name="beta.bin"/>
-    </rom>
     <!-- Vertical game -->
     <rom index="1">
         <part>01</part>

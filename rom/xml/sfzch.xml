@@ -1,6 +1,6 @@
 <mame>
 	<machine name="sfzch" sourcefile="cps1.cpp" cloneof="sfa" romof="sfzch">
-		<description>Street Fighter Zero (CPS Changer 1.5, Japan 201218)</description>
+		<description>Street Fighter Zero (CPS Changer, Japan 201218)</description>
 		<year>2020</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="sfzch23" size="524288" crc="1140743f" sha1="10bcedb5cca266f2aa3ed99ede6f9a64fc877539" region="maincpu" offset="0" flags="140"/>

@@ -21,7 +21,7 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Street Fighter Zero (CPS Changer 1.5, Japan 201218)</name>
+    <name>Street Fighter Zero (CPS Changer, Japan 201218)</name>
     <setname>sfzch</setname>
     <rbf>jtcps15</rbf>
     <mameversion>0229</mameversion>
@@ -31,7 +31,7 @@
     <joystick>8-way</joystick>
     <rotation>horizontal</rotation>
     <region>Japan</region>
-    <platform>CPS-1.5</platform>
+    <platform>CPS-Changer</platform>
     <category>Fighting</category>
     <catver>Game Console / Home Videogame</catver>
     <mraauthor>jotego,atrac17</mraauthor>
@@ -40,7 +40,7 @@
         00 08 00 09 00 19 00 39 
         ff ff ff ff ff ff ff ff 
         32 ff 00 02 04 06 26 28 
-        2a 2c 2e 00 00 30 02 04 
+        2a 2c 2e 36 30 30 02 04 
         08 30 20 00 00 ff ff 11 
         ff ff ff ff ff ff ff ff 
         ff ff ff ff ff ff ff ff 
@@ -55,8 +55,12 @@
         <part name="sfz.01" crc="ffffec7d"/>
         <part name="sfz.02" crc="45f46a08"/>
         <!-- qsound - starts at 0x240000 -->
-        <part name="sfz.11m" crc="c4b093cd"/>
-        <part name="sfz.12m" crc="8bdbc4b4"/>
+        <interleave output="16">
+            <part name="sfz.11m" crc="c4b093cd" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="sfz.12m" crc="8bdbc4b4" map="12"/>
+        </interleave>
         <!-- gfx - starts at 0x640000 -->
         <interleave output="64">
             <part name="sfz_01.3a" crc="0dd53e62" map="00000021"/>
@@ -109,9 +113,5 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="23" default="ff,ff,ff">
-        <!-- DSWA -->
-        <dip name="Uknown" bits="0,7" ids="On,Off"/>
-    </switches>
     <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Taunt/Start,Pause,Core credits" default="Y,X,B,A,L,R,Select,Start,-" count="6"/>
 </misterromdescription>

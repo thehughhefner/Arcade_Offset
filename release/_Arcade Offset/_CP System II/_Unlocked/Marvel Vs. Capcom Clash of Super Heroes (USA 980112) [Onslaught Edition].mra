@@ -102,9 +102,6 @@
         <patch offset="0x0e2162">08 00 22 00 22 00 22</patch>
         <patch offset="0x0e2464">9a 20</patch>
     </rom>
-    <rom index="16" zip="beta.zip" md5="None">
-        <part name="beta.bin"/>
-    </rom>
     <rom index="1">
         <part>00</part>
     </rom>

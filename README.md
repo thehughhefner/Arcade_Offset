@@ -59,7 +59,7 @@ This will be addressed in the future.
 
 | Title         | Core        | Information                  | Date Available: |
 |---------------|-------------|------------------------------|-----------------|
-[**Street Smart Final Fight (Japan) [Hack]**]() | **JTCPS1** | [**View Readme**]().md) | 20210706 |
+[**Street Smart Final Fight (Japan) [Hack]**](https://github.com/atrac17/Arcade_Offset/blob/main/release/_Arcade%20Offset/_CP%20System/Street%20Smart%20Final%20Fight%20(Japan)%20%5BHack%5D.mra) | **JTCPS1** | [**View Readme**](https://github.com/atrac17/Arcade_Offset/blob/main/readme/CP%20System/Street%20Smart%20Final%20Fight%20(Japan)%20%5BHack%5D.md) | 20210706 |
 
 </details>
 
@@ -70,7 +70,7 @@ This will be addressed in the future.
 | Title         | Core        | Information                  | Date Available: |
 |---------------|-------------|------------------------------|-----------------|
 [**Street Fighter Zero (CPS Changer, Japan 201218)**](https://github.com/atrac17/Arcade_Offset/blob/main/release/_Arcade%20Offset/_CP%20System%20Changer/Street%20Fighter%20Zero%20(CPS%20Changer%2C%20Japan%20201218).mra) | [**JTCPS15**](https://github.com/jotego/jtbin/blob/master/mister/cps15/releases/jtcps15_20210604.rbf) | [**View Readme**](https://github.com/atrac17/Arcade_Offset/blob/main/readme/CP%20System%20Changer/Street%20Fighter%20Zero%20(CPS%20Changer%2C%20Japan%20201218).md) | 20210624 |
-[**Tenchi wo Kurau II: Sekiheki no Tatakai (CPS Changer, Japan 921031)**]() | **JTCPS15** | [**View Readme**]().md) | 20210706 |
+[**Tenchi wo Kurau II: Sekiheki no Tatakai (CPS Changer, Japan 921031)**](https://github.com/atrac17/Arcade_Offset/blob/main/release/_Arcade%20Offset/_CP%20System%20Changer/Tenchi%20wo%20Kurau%20II%20Sekiheki%20no%20Tatakai%20(CPS%20Changer%2C%20Japan%20921031)%20%5BUnlocked%5D.mra) | **JTCPS15** | [**View Readme**]() | 20210706 |
 
 </details>
 

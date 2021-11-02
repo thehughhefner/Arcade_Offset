@@ -18,7 +18,7 @@ Readme files for each title not in an **`hbmame`** directory per system cite the
 
 Below is a **`video tutorial`** on how to install and run **[`arcade_offset_update.sh`](https://raw.githubusercontent.com/atrac17/Arcade_Offset/main/arcade_offset_update.sh)** using **[`update_all`](https://github.com/theypsilon/Update_All_MiSTer)** by **`@theypsilon`**. 
 
-The script is also available for download **[`here`](https://raw.githubusercontent.com/atrac17/Arcade_Offset/main/arcade_offset_update.sh)**. Save the raw text as **`arcade_offset_update.sh`**.  View the video tutorial on how to run the script utilizing **[`update_all`](https://github.com/theypsilon/Update_All_MiSTer)**.
+The script is also available for download **[`here`](https://raw.githubusercontent.com/atrac17/Arcade_Offset/main/arcade_offset_update.sh)**. Save the raw text as **`arcade_offset_update.sh`** and place in **`media/fat/scripts`**.  View the video tutorial on how to run the script utilizing **[`update_all`](https://github.com/theypsilon/Update_All_MiSTer)**.
 
 <details>
 <summary>

@@ -4,7 +4,7 @@
 
 This repository includes encrypted and decrypted patches for titles available on [**`jotego's jtcps1 repository`**](https://github.com/jotego/).
 
-These patches utilize encrypted roms from mame sets 0.229 or higher.
+These patches utilize encrypted roms from **`mame sets 0.229 or higher`**.
 The intent of these patched mra files is to alleviate the need for additional roms in **`games/mame`** or **`games/hbmame`** and patch the merged rom on the fly.
 
 They include **`unlocked characters, modes, enchancements, trainers, and other features`** available in encrypted and decrypted romsets. 
@@ -14,11 +14,11 @@ The primary usage is to no longer input a **`code`** to access hidden characters
 Readme files for each title not in an **`hbmame`** directory per system cite the author. If none is notated, then the patch has sourced from me.
 
 
-## Arcade Offset Update (Download Script)
+## Arcade Offset Updater
 
-Below is a **`video tutorial`** on how to install and run **[`arcade_offset_update.sh`](https://raw.githubusercontent.com/atrac17/Arcade_Offset/main/arcade_offset_update.sh)** from **`@theypsilon`** using **[`update_all`](https://github.com/theypsilon/Update_All_MiSTer)**. 
+Below is a **`video tutorial`** on how to install and run **[`arcade_offset_update.sh`](https://raw.githubusercontent.com/atrac17/Arcade_Offset/main/arcade_offset_update.sh)** using **[`update_all`](https://github.com/theypsilon/Update_All_MiSTer)** by **`@theypsilon`**. 
 
-The script is also available for download **[`here`](https://raw.githubusercontent.com/atrac17/Arcade_Offset/main/arcade_offset_update.sh)**. Save the raw text as **`arcade_offset_update.sh`**.  View the video tutorial on how to run the script.
+The script is also available for download **[`here`](https://raw.githubusercontent.com/atrac17/Arcade_Offset/main/arcade_offset_update.sh)**. Save the raw text as **`arcade_offset_update.sh`**.  View the video tutorial on how to run the script utilizing **[`update_all`](https://github.com/theypsilon/Update_All_MiSTer)**.
 
 <details>
 <summary>

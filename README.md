@@ -3,21 +3,23 @@
 
 ## Arcade Offset (Patched MRA Files)
 
-This repository will include encrypted patches for titles available on [**jotego's jtcps1 repository**](https://github.com/jotego/). In the future, I may continue patching other titles for various cores playable on [**MiSTerFPGA found in the MiSTer-devel repository**](https://github.com/MiSTer-devel).
+This repository includes encrypted and decrypted patches for titles available on [**`jotego's jtcps1 repository`**](https://github.com/jotego/).
 
-These patches utilize encrypted roms from mame 0.229 or higher.  They should work with previous mame sets if no changes were made to the merged rom. The intent of these patched mra files is to alleviate the need for additional roms in **`games/mame`** or **`games/hbmame`** and patch the merged rom on the fly.
+These patches utilize encrypted roms from mame sets 0.229 or higher.
+The intent of these patched mra files is to alleviate the need for additional roms in **`games/mame`** or **`games/hbmame`** and patch the merged rom on the fly.
 
-They include **unlocked characters, modes, enchancements, trainers, and other features** available in the encrypted romsets. The primary usage is to no longer input a **code** to access hidden characters. Some files may be found in **HBMame**, although that is not the original source. The readme files for each title show the source of the patch and the author. If none is notated, then the patch has sourced from me.
+They include **`unlocked characters, modes, enchancements, trainers, and other features`** available in encrypted and decrypted romsets. 
 
-There are custom **.xml** files generated to export these enchancements to **.mra** files when generated. They are located in the **rom/xml** directory.
+The primary usage is to no longer input a **`code`** to access hidden characters. Some files may be found in **`hbmame`**, although that is not the original source unless the file is located in the **`games/hbmame`** directory. 
+
+Readme files for each title not in an **`hbmame`** directory per system cite the author. If none is notated, then the patch has sourced from me.
+
 
 ## Arcade Offset Update (Download Script)
 
-Below is a video tutorial on how to install and run [arcade_offset_update.sh](https://github.com/atrac17/Arcade_Offset/blob/main/arcade_offset_update.sh). It can be run from **SSH** or on you **MiSTer**.
+Below is a **`video tutorial`** on how to install and run **[`arcade_offset_update.sh`](https://raw.githubusercontent.com/atrac17/Arcade_Offset/main/arcade_offset_update.sh)** from **`@theypsilon`** using **[`update_all`](https://github.com/theypsilon/Update_All_MiSTer)**. 
 
-Just simply download the script by clicking `code` and choose `zip` file. Extract the file named `arcade_offset_update.sh` and place it in `media/fat/Scripts/`.
-
-You can also download the scipt **[here](https://raw.githubusercontent.com/atrac17/Arcade_Offset/main/arcade_offset_update.sh)**.
+The script is also available for download **[`here`](https://raw.githubusercontent.com/atrac17/Arcade_Offset/main/arcade_offset_update.sh)**.
 
 <details>
 <summary>
@@ -28,30 +30,14 @@ You can also download the scipt **[here](https://raw.githubusercontent.com/atrac
         
 </details>
 
-Uncollapse the video below to view the tutorial on how to run the script(s).
+View the video tutorial on how to run the script.
 
 <details>
 <summary>
 <b>Arcade Offset Update Video Tutorial</b>
 </summary>
-<p>https://user-images.githubusercontent.com/32810066/123512934-2e77c780-d658-11eb-8707-8db9f5bfc89c.mp4</p>
+<p>INSERT VIDEO</p>
 <summary>
-<b>Arcade Offset Update Video Tutorial 20210706</b>
-</summary>
-<p>https://user-images.githubusercontent.com/32810066/124557190-34fc0100-de07-11eb-8fe0-260505dca27d.mp4</p>
-</details>
-
-## Compatibility Notes
-
-<details>
-
-<summary>Compatibility with <b>jtcps15</b> as of 20210624:</summary>
-
-Currently, the **fourth button** has been eliminated in [**jotego's jtcps15 core**](https://github.com/jotego/jtbin/tree/master/mister/cps15) to fix an issue with [**Muscle Bomber Duo**](https://github.com/jotego/jtcps1/issues/99) as no officially released titles utilize more than three buttons on the hardware. 
-
-Please use the core linked below separately in **Current Titles** if you wish to have full **6 button support** for ***Street Fighter Zero (CPS Changer, Japan 201218)***. If not, you will lose the input for `lk`/`B4`.
-
-This will be addressed in the future.
 
 </details>
 
@@ -59,17 +45,10 @@ This will be addressed in the future.
 
 <details>
 
-<summary>Naming Schema Template:</summary>
-
-| **No [ ]**| **[TE]**| **[Naming Schema]**|
-|---------------|-------------|-------------|
-| ***[Unlocked]*** | ***[Training Edition]***  | ***[Onslaught Edition], [Aesthetic Mod], [v1], Etc.*** |
-
-</details>
 
 <details>
 
-<summary><b>Current Titles for CP System:</b></summary>
+<summary><b>Current Titles for CP System (CPS1):</b></summary>
 
 | Title         | Core        | Information                  | Date Available: |
 |---------------|-------------|------------------------------|-----------------|
@@ -79,7 +58,7 @@ This will be addressed in the future.
 
 <details>
 
-<summary><b>Current Titles for CP System Changer:</b></summary>
+<summary><b>Current Titles for CP System Changer (CPS-C):</b></summary>
 
 | Title         | Core        | Information                  | Date Available: |
 |---------------|-------------|------------------------------|-----------------|
@@ -90,7 +69,7 @@ This will be addressed in the future.
 
 <details>
 
-<summary><b>Current Titles for CP System II:</b></summary>
+<summary><b>Current Titles for CP System II (CPS2):</b></summary>
 
 | Title         | Core        | Information                  | Date Available: |
 |---------------|-------------|------------------------------|-----------------|
@@ -133,9 +112,11 @@ This will be addressed in the future.
 
 ## Patched MRA Format
 
-This is the provided layout used for **`jtcps2`**. Patches are applied to the loaded roms from **`rom index="0"`**. Additional information may be provided from **soft dip** settings in the eeprom/nvram file. The hex is taken from **soft dip** settings and applied to **`rom index="02"`**. The  **`rom index`** usage will vary from core to core dependent upon the author.
+This is the provided layout used for **`jtcps2`**. Patches are applied to the loaded roms from **`rom index="0"`**.  
 
-As these are generated from a tool chain, they do not mirror the example shown at [**MiSTer-devel/Main_MiSTer #MRA Format**](https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms-and-MRA-files#mra-format).
+Additional information may be provided from **`soft dip`** settings in the eeprom **`(nvram file)`**. The hex is taken from **`soft dip`** settings and applied to **`rom index="02"`**. 
+
+The  **`rom index`** usage will vary from core to core dependent upon the author.  As these are generated from a tool chain from **`jtframe`**, they do not mirror the example shown at [**MiSTer-devel/Main_MiSTer #MRA Format**](https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms-and-MRA-files#mra-format).
 
 <details>
         <summary><b>Patched MRA Template</b></summary>

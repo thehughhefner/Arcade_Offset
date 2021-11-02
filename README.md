@@ -1,6 +1,5 @@
 ![atracao](https://user-images.githubusercontent.com/32810066/124553684-0714bd80-de03-11eb-9f09-d34e61373405.png)
 
-
 ## Arcade Offset (Patched MRA Files)
 
 This repository includes encrypted and decrypted patches for titles available on [**`jotego's jtcps1 repository`**](https://github.com/jotego/).
@@ -19,24 +18,13 @@ Readme files for each title not in an **`hbmame`** directory per system cite the
 
 Below is a **`video tutorial`** on how to install and run **[`arcade_offset_update.sh`](https://raw.githubusercontent.com/atrac17/Arcade_Offset/main/arcade_offset_update.sh)** from **`@theypsilon`** using **[`update_all`](https://github.com/theypsilon/Update_All_MiSTer)**. 
 
-The script is also available for download **[`here`](https://raw.githubusercontent.com/atrac17/Arcade_Offset/main/arcade_offset_update.sh)**.
-
-<details>
-<summary>
-<b>Script Download</b>
-</summary>
-        
-![Picture](https://user-images.githubusercontent.com/32810066/123520704-e79dc800-d67f-11eb-97c2-86bcd0ab6b87.png)
-        
-</details>
-
-View the video tutorial on how to run the script.
+The script is also available for download **[`here`](https://raw.githubusercontent.com/atrac17/Arcade_Offset/main/arcade_offset_update.sh)**. Save the raw text as **`arcade_offset_update.sh`**.  View the video tutorial on how to run the script.
 
 <details>
 <summary>
 <b>Arcade Offset Update Video Tutorial</b>
 </summary>
-<p>INSERT VIDEO</p>
+<p>https://user-images.githubusercontent.com/32810066/139780351-203774bb-e3b9-4e8f-afba-217cc401189d.mp4</p>
 <summary>
 
 </details>
@@ -45,10 +33,7 @@ View the video tutorial on how to run the script.
 
 <details>
 
-
-<details>
-
-<summary><b>Current Titles for CP System (CPS1):</b></summary>
+<summary><b>Current Titles for CP System (CPS-1):</b></summary>
 
 | Title         | Core        | Information                  | Date Available: |
 |---------------|-------------|------------------------------|-----------------|
@@ -69,7 +54,7 @@ View the video tutorial on how to run the script.
 
 <details>
 
-<summary><b>Current Titles for CP System II (CPS2):</b></summary>
+<summary><b>Current Titles for CP System II (CPS-2):</b></summary>
 
 | Title         | Core        | Information                  | Date Available: |
 |---------------|-------------|------------------------------|-----------------|
@@ -110,13 +95,14 @@ View the video tutorial on how to run the script.
 
 </details>
 
+
 ## Patched MRA Format
 
 This is the provided layout used for **`jtcps2`**. Patches are applied to the loaded roms from **`rom index="0"`**.  
 
 Additional information may be provided from **`soft dip`** settings in the eeprom **`(nvram file)`**. The hex is taken from **`soft dip`** settings and applied to **`rom index="02"`**. 
 
-The  **`rom index`** usage will vary from core to core dependent upon the author.  As these are generated from a tool chain from **`jtframe`**, they do not mirror the example shown at [**MiSTer-devel/Main_MiSTer #MRA Format**](https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms-and-MRA-files#mra-format).
+The  **`rom index`** usage will vary from core to core dependent upon the author.  These are generated from a tool chain utilized in **`jtframe`**, they do not mirror the example shown at [**`MiSTer-devel/Main_MiSTer #MRA Format`**](https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms-and-MRA-files#mra-format).
 
 <details>
         <summary><b>Patched MRA Template</b></summary>

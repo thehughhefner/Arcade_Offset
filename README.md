@@ -2,7 +2,7 @@
 
 ## Arcade Offset (Patched MRA Files)
 
-This repository includes encrypted and decrypted patches for titles available on [**`jotego's jtcps1 repository`**](https://github.com/jotego/).
+This repository includes encrypted and decrypted patches for arcade titles playable on verilog Capcom Play System FPGA cores found in [**`jotego's jtcps1 repository`**](https://github.com/jotego/).
 
 These patches utilize encrypted roms from **`mame sets 0.229 or higher`**.
 The intent of these patched mra files is to alleviate the need for additional roms in **`games/mame`** or **`games/hbmame`** and patch the merged rom on the fly.

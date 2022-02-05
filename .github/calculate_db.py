@@ -12,6 +12,7 @@ import sys
 from datetime import datetime
 import os
 import tempfile
+import urllib.parse
 
 def main(sha, time):
     print('sha: %s' % sha)
@@ -77,7 +78,7 @@ def create_db(options):
             continue
 
         db["files"][strfile] = {
-            "url": options['base_files_url'] + address,
+            "url": options['base_files_url'] + urllib.parse.quote(address),
             "delete": delete_list(strfile, delete_list_regex),
             "size": size('%s/%s' % (options['folder'], address)),
             "hash": hash('%s/%s' % (options['folder'], address))

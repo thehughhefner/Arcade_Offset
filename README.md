@@ -1,11 +1,11 @@
 ![atracao](https://user-images.githubusercontent.com/32810066/124553684-0714bd80-de03-11eb-9f09-d34e61373405.png)
   
-## Repository information
+## Repository Information
 
 - Patched MRA files for encrypted and decrypted titles on [**jotego's**](https://github.com/jotego/) verilog implementation of Capcom Play System hardware. 
 
 
-## What are these for?
+## What Are These For?
 
 - These patches utilize encrypted roms from [**mame 0.229 or higher**](https://www.mamedev.org). The patched MRA files do not require additional roms in `games/mame` or  `games/hbmame` and patch the rom on the fly.
 
@@ -13,7 +13,7 @@
 
 - Readme files for each MRA available cite the author. If none is notated, then the patch has sourced from me or hbmame.
 
-## How do I get them?
+## How Do I Get Them?
 
 - These patched mra files are available with the popular [**update_all.sh**](https://github.com/theypsilon/Update_All_MiSTer) updater script.  Enable Arcade_Offset in the downloader to retrieve them.
 
